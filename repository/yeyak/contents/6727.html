@@ -1,0 +1,126 @@
+<div class="map_box cts">
+    <div class="map_inner" data-timestamp="1735890594668" data-key="2motp">
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1735890594668" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+    $(document).ready(function() {
+        var roughmap = new daum.roughmap.Lander({
+            "timestamp": "1735890594668",
+            "key": "2motp",
+        });
+
+        roughmap.render();
+
+        var interval = setInterval(function() {
+            var label = $('.roughmap_maker_label');
+            var labelText = $('.roughmap_maker_label .roughmap_lebel_text');
+            if (labelText.length > 0) {
+                labelText.html('성북 정보도서관');  // 텍스트 변경
+                label.css('left', '18.75px');
+                clearInterval(interval);  // 텍스트를 바꾸었으면 더 이상 반복하지 않도록
+            }
+        }, 20);  
+    });
+</script>
+    </div>
+</div>
+
+<div class="map_info-box cts">
+    <span>성북구 오패산로3길 87 (대표번호 : 02-2241-2489 / 팩스 : 02-2241-6530)</span>
+</div>
+
+<h4>버스로 오실 때</h4>
+<div class="table_scroll">
+
+    <table class="table type2 move">
+        <caption>버스로 오실 때 - 성가복지병원 앞, 성가복지원 건너편, 월곡두산아파트 앞, 월곡뉴타운 역(현대백화점 앞), 월곡아남아파트 앞</caption>
+        <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 15%;">
+            <col style="width: 65%;">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th rowspan="3" class="text_center">
+                    <div class="icon_wrap"><img alt="교육장안내" src="/site/yeyak/images/contents/bus_icon.png"></div>
+                    <span class="bus_title">월곡뉴타운 역<br>(현대백화점 앞)</span>
+            </th>
+                <td><span class="bus n1">간선버스</span></td>
+                <td>120, 173 (월곡중학교, <span class="subway n6">상월곡역</span> 하차)</td>
+            </tr>
+            <tr>
+                <td><span class="bus n2">지선버스</span></td>
+                <td>1111 (월곡중학교, <span class="subway n6">상월곡역</span> 하차)</td>
+            </tr>
+            <tr>
+                <td><span class="bus n3">마을버스</span></td>
+                <td>성북12 (월곡중학교 하차)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>지하철로 오실 때</h4>
+<div class="table_scroll">
+    <table class="table type2 move">
+        <caption>지하철로 오실 때 - 4호선, 6호선</caption>
+        <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 15%;">
+            <col style="width: 65%;">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th class="text_center">
+                    <img alt="교육장안내" src="/site/yeyak/images/contents/subway_icon.png">
+                <br></th>
+                <td><span class="subway num n6">6</span><span class="subway n6">호선</span></td>
+                <td><span class="subway n6">상월곡역 </span>하차 4번 출구</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>차로 오실 때</h4>
+<div class="table_scroll">
+    <table class="table type2 move">
+        <caption>차로 오실 때 - 4호선, 6호선</caption>
+        <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 15%;">
+            <col style="width: 65%;">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th rowspan="2" class="text_center">
+                    <img alt="교육장안내" src="/site/yeyak/images/contents/car_icon.png">
+                <br></th>
+                <td>식계방면</td>
+                <td>북부간선도로 월곡램프 아래 월곡2동 주민센터에서 우회전 화랑로 18길 진입
+                </td>
+            </tr>
+            <tr>
+                <td>월곡방면</td>
+                <td>월곡중앞 좌회전 월곡2동 주민센터 옆 화랑로18길 진입</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>주차</h4>
+<h5>도서관 후면
+    노상주차장 이용</h5>
+<ul class="bu">
+    <li>이용시간 : 08:00 ~ 18:00</li>
+    <li>이용요금 : 도서관이용 1시간무료 후 10분당 100원,
+        주말 및 공휴일은 무료</li>
+</ul>

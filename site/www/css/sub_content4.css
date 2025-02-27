@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* (주)한신정보기술 박서영 - 2024.11 */
+.blt{position:relative; padding-left:17px; font-size:16px; line-height:26px;}
+.blt:before{display:block; position:absolute; top:9px; left:4px; width:7px; height:7px; border-radius:50%; background-color:#1978e3;}
+@media all and (max-width:640px){
+    .blt{padding-left:12px; font-size:14px; line-height:22px;}
+    .blt:before{top:8px; left:0; width:5px; height:5px;}
+}
+
+.tab_content > h3:first-child{margin-top:50px;}
+
+/* 정보공개 수요분석 */
+.cts5861_wrap .table_scroll{width:100%; overflow-x:auto;}
+.cts5861_wrap em{display:inline;}
+.cts5862_wrap .table_scroll{width:100%; overflow-x:auto;}
+.cts5862_wrap em{display:inline;}
+.cts5863_wrap .table_scroll{width:100%; overflow-x:auto;}
+.cts5863_wrap em{display:inline;}
+.cts5864_wrap .table_scroll{width:100%; overflow-x:auto;}
+.cts5864_wrap em{display:inline;}
+
+/* 조직정보공개 */
+.cts5859_wrap .organ_box{position:relative; font-size:0; line-height:0;}
+.cts5859_wrap .organ_box .table_box{display:inline-block; width:50%; vertical-align:top;}
+.cts5859_wrap .organ_box .chart_box{display:inline-block; position:relative; width:50%; padding:10px; border:1px solid #cacbce; vertical-align:top;}
+.cts5859_wrap .organ_box .chart_box .chart_label{position:absolute; top:-40px; right:0;}
+.cts5859_wrap .organ_box .chart_box .chart_label .label{position:relative; margin-left:18px; padding-left:35px; color:#666; font-size:14px; font-weight:300; line-height:21px; letter-spacing:-0.04em;}
+.cts5859_wrap .organ_box .chart_box .chart_label .label:before{display:block; position:absolute; top:2px; left:0; width:28px; height:17px; background-color:#5385d2;}
+.cts5859_wrap .organ_box .chart_box .chart_label .label:nth-child(2):before{background-color:#f05e81;}
+@media all and (max-width:1300px){
+    .cts5859_wrap .organ_box .table_box{display:block; width:100%;}
+    .cts5859_wrap .organ_box .chart_box{display:block; width:100%; margin-top:20px;}
+    .cts5859_wrap .organ_box .chart_box.text{margin-top:60px;}
+}
+
+/* 주요업무계획 */
+.cts5876_wrap .emphasis{margin-bottom:0;}
+.cts5876_wrap .emphasis:not(.half){margin-top:0;}
+.cts5876_wrap .work{position:relative; margin-top:96px;}
+.cts5876_wrap .work .tit_box{position:relative; width:640px; margin:0 auto 26px; padding:41px 20px; border-radius:65px; background:linear-gradient(to right, #f7ea96 40%, #acead1); text-align:center;}
+.cts5876_wrap .work .tit_box:before{display:block; position:absolute; top:-42px; left:0; right:0; width:72px; height:72px; margin:0 auto; border:2px solid #e3ecaa; border-radius:50%; background:#fff url("/site/www/images/contents/cts5876_img01.png") no-repeat center center; box-shadow:8px 6px 20px rgba(0,0,0,0.1);}
+.cts5876_wrap .work .tit_box .tit{display:inline-block; margin-right:32px; padding-top:4px; padding-left:20px; color:#000; font-size:28px; font-family:'GmarketSans'; font-weight:500; line-height:36px; letter-spacing:-0.025em; vertical-align:middle;}
+.cts5876_wrap .work .tit_box .btn{display:inline-block; min-width:160px; margin:0; vertical-align:middle;}
+.cts5876_wrap .work .txt{position:relative; z-index:1; width:100px; height:35px; margin:0 auto; border-radius:35px; background:linear-gradient(to right, #455260, #29323d); color:#fff; font-size:16px; font-weight:600; text-align:center; line-height:35px; letter-spacing:-0.04em;}
+.cts5876_wrap .work .txt:before{display:block; position:absolute; top:-26px; left:0; right:0; width:2px; height:26px; margin:0 auto; background:#ebeef2;}
+.cts5876_wrap .work .work_list{position:relative; margin-top:51px; font-size:0; line-height:0;}
+.cts5876_wrap .work .work_list:before{display:block; position:absolute; top:-70px; left:0; right:0; width:800px; height:calc(100% + 50px); margin:0 auto; border-radius:65px; background:linear-gradient(#f7f8fa, #fff, #f7f8fa);}
+.cts5876_wrap .work .work_item{display:inline-block; position:relative; width:calc((100% - 34px) / 3); margin-right:17px; margin-bottom:60px; padding-top:257px; vertical-align:top;}
+.cts5876_wrap .work .work_item:before{display:block; position:absolute; top:0; left:0; width:calc(100% - 39px); height:315px; border-radius:90px 20px 20px 20px; background:no-repeat center center / cover;}
+.cts5876_wrap .work .work_item.n1:before{background-image:url("/site/www/images/contents/cts5876_img02.png");}
+.cts5876_wrap .work .work_item.n2:before{background-image:url("/site/www/images/contents/cts5876_img03.png");}
+.cts5876_wrap .work .work_item.n3:before{background-image:url("/site/www/images/contents/cts5876_img04.png");}
+.cts5876_wrap .work .work_item.n4:before{background-image:url("/site/www/images/contents/cts5876_img05.png");}
+.cts5876_wrap .work .work_item.n5:before{background-image:url("/site/www/images/contents/cts5876_img06.png");}
+.cts5876_wrap .work .work_item.n6:before{background-image:url("/site/www/images/contents/cts5876_img07.png");}
+.cts5876_wrap .work .work_item .work_txt{position:relative; width:240px; height:100px; margin-left:auto; padding:21px 0 15px; border-radius:70px 20px 20px 10px; color:#fff; font-size:16px; font-weight:400; text-align:center; line-height:32px; letter-spacing:-0.03em;}
+.cts5876_wrap .work .work_item .work_txt span{display:block; font-size:20px; font-weight:600;}
+.cts5876_wrap .work .work_item.n1 .work_txt{background-color:#24aa9d; box-shadow:8px 6px 25px rgba(36, 171, 158, 0.35);}
+.cts5876_wrap .work .work_item.n2 .work_txt{background-color:#3672cd; box-shadow:8px 6px 25px rgba(54, 114, 205, 0.35);}
+.cts5876_wrap .work .work_item.n3 .work_txt{background-color:#1099c7; box-shadow:8px 6px 25px rgba(16, 153, 199, 0.35);}
+.cts5876_wrap .work .work_item.n4 .work_txt{background-color:#7679d8; box-shadow:8px 6px 25px rgba(118, 121, 216, 0.35);}
+.cts5876_wrap .work .work_item.n5 .work_txt{width:270px; background-color:#f362ac; box-shadow:8px 6px 25px rgba(243, 98, 172, 0.35);}
+.cts5876_wrap .work .work_item.n6 .work_txt{background-color:#dd9805; box-shadow:8px 6px 25px rgba(255, 183, 32, 0.35);}
+@media all and (min-width:1301px){
+    .cts5876_wrap .work .work_item:nth-child(3n){margin-right:0;}
+}
+@media all and (max-width:1300px){
+    .cts5876_wrap .work .tit_box{width:600px;}
+    .cts5876_wrap .work .tit_box .tit{font-size:24px;}
+    .cts5876_wrap .work .work_list:before{width:calc(100% - 200px);}
+    .cts5876_wrap .work .work_item{width:calc((100% - 17px) / 2);}
+    .cts5876_wrap .work .work_item:nth-child(2n){margin-right:0;}
+}
+@media all and (max-width:1000px){
+    .cts5876_wrap .work .tit_box{width:calc(100% - 200px); padding:37px 20px;}
+    .cts5876_wrap .work .tit_box .tit{margin-right:15px; font-size:22px;}
+    .cts5876_wrap .work .work_item{padding-top:200px; margin-bottom:40px;}
+    .cts5876_wrap .work .work_item:before{width:calc(100% - 30px); height:265px;}
+    .cts5876_wrap .work .work_item .work_txt{font-size:15px; line-height:30px;}
+    .cts5876_wrap .work .work_item .work_txt span{font-size:18px;}
+}
+@media all and (max-width:640px){
+    .cts5876_wrap .work .tit_box{width:90%; padding:30px 20px;}
+    .cts5876_wrap .work .tit_box:before{width:50px; height:50px; background-size:55% auto;}
+    .cts5876_wrap .work .tit_box .tit{display:block; margin-right:0; padding:0; font-size:20px; line-height:30px;}
+    .cts5876_wrap .work .tit_box .btn{margin-top:5px;}
+    .cts5876_wrap .work .work_list:before{width:90%; border-radius:35px;}
+    .cts5876_wrap .work .work_item{width:100%; margin-right:0; padding-top:130px;}
+    .cts5876_wrap .work .work_item:before{width:300px; height:200px; right:0; margin:0 auto;}
+    .cts5876_wrap .work .work_item .work_txt{margin-right:10%; height:auto; padding:12px 0; border-radius:40px 15px 15px 10px; font-size:14px; line-height:28px;}
+    .cts5876_wrap .work .work_item .work_txt span{font-size:16px;}
+    .cts5876_wrap .work .work_item.n5 .work_txt{width:240px;}
+}
+
+/* 자치법규 */
+.cts5894_wrap .em_red{display:inline;}
+@media all and (max-width:640px){
+    .cts5894_wrap .box_text br{display:none;}
+}
+
+/* 2024 재정운용 */
+.cts5897_wrap .img_zoom.back{padding:60px 0 40px; border:none;}
+@media all and (max-width:1000px){
+    .cts5897_wrap .img_zoom.back{padding:40px 0 20px;}
+}
+@media all and (max-width:640px){
+    .cts5897_wrap .img_zoom.back{padding:20px 0 10px;}
+}
+
+/* 2023 통계연보 */
+.cts5914_wrap .stats{position:relative;}
+.cts5914_wrap .stats .stats_list{font-size:0; line-height:0;}
+.cts5914_wrap .stats .stats_item{display:inline-block; width:calc((100% - 60px) / 6); margin-right:12px; margin-bottom:9px; border:1px solid #a0c8f6; border-radius:20px; vertical-align:top;}
+.cts5914_wrap .stats .stats_item a{width:100%; height:100%; padding:24px 0 18px; text-align:center;}
+.cts5914_wrap .stats .stats_item a .txt{position:relative; width:100%; padding-top:70px; color:#103e89; font-size:17px; line-height:27px; letter-spacing:-0.025em;}
+.cts5914_wrap .stats .stats_item a .txt:before{display:block; position:absolute; top:0; left:0; right:0; width:60px; height:60px; margin:0 auto; border-radius:25px 15px 25px 25px; background:#e5f2fe url("/site/www/images/contents/cts5914_icon.png") no-repeat;}
+.cts5914_wrap .stats .stats_item.n1 a .txt:before{background-position:0 0;}
+.cts5914_wrap .stats .stats_item.n2 a .txt:before{background-position:-60px 0;}
+.cts5914_wrap .stats .stats_item.n3 a .txt:before{background-position:-120px 0;}
+.cts5914_wrap .stats .stats_item.n4 a .txt:before{background-position:-180px 0;}
+.cts5914_wrap .stats .stats_item.n5 a .txt:before{background-position:-240px 0;}
+.cts5914_wrap .stats .stats_item.n6 a .txt:before{background-position:-300px 0;}
+.cts5914_wrap .stats .stats_item.n7 a .txt:before{background-position:0 -60px;}
+.cts5914_wrap .stats .stats_item.n8 a .txt:before{background-position:-60px -60px;}
+.cts5914_wrap .stats .stats_item.n9 a .txt:before{background-position:-120px -60px;}
+.cts5914_wrap .stats .stats_item.n10 a .txt:before{background-position:-180px -60px;}
+.cts5914_wrap .stats .stats_item.n11 a .txt:before{background-position:-240px -60px;}
+.cts5914_wrap .stats .stats_item.n12 a .txt:before{background-position:-300px -60px;}
+.cts5914_wrap .stats .stats_item.n13 a .txt:before{background-position:0 -120px;}
+.cts5914_wrap .stats .stats_item.n14 a .txt:before{background-position:-60px -120px;}
+.cts5914_wrap .stats .stats_item.n15 a .txt:before{background-position:-120px -120px;}
+.cts5914_wrap .stats .stats_item.n16 a .txt:before{background-position:-180px -120px;}
+.cts5914_wrap .stats .stats_item.n17 a .txt:before{background-position:-240px -120px;}
+.cts5914_wrap .stats .stats_item.n18 a .txt:before{background-position:-300px -120px;}
+.cts5914_wrap .img_zoom img{box-shadow:0 0 30px rgba(0,0,0,0.1);}
+@media all and (max-width:1500px){
+    .cts5914_wrap .stats .stats_item a .txt{font-size:16px;}
+}
+@media all and (min-width:1301px){
+    .cts5914_wrap .stats .stats_item:nth-child(6n){margin-right:0;}
+}
+@media all and (max-width:1300px){
+    .cts5914_wrap .stats .stats_item{width:calc((100% - 36px) / 4);}
+    .cts5914_wrap .stats .stats_item:nth-child(4n){margin-right:0;}
+}
+@media all and (max-width:1000px){
+    .cts5914_wrap .stats .stats_item a .txt{font-size:15px; line-height:25px;}
+}
+@media all and (max-width:800px){
+    .cts5914_wrap .stats .stats_item{width:calc((100% - 12px) / 2);}
+    .cts5914_wrap .stats .stats_item:nth-child(2n){margin-right:0;}
+}
+@media all and (max-width:640px){
+    .cts5914_wrap .stats .stats_item a .txt{padding-top:60px;}
+    .cts5914_wrap .stats .stats_item a .txt:before{border-radius:20px 10px 20px 20px; transform:scale(0.85); transform-origin:top center;}
+}
+
+/* 사회조사 및 사회지표 */
+.cts5911_wrap .box.photo .box_item{position:relative; width:33.33%;}
+.cts5911_wrap .box.photo .box_item:before{display:block; position:absolute; top:0; right:0; width:1px; height:320px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAAXNSR0IArs4c6QAAABBJREFUGFdj2LRp038GOAAAJiIDFnIFn0YAAAAASUVORK5CYII=);}
+.cts5911_wrap .box.photo .box_item:last-child:before{display:none;}
+.cts5911_wrap .box.photo .box_image img{border:1px solid #e4e4e4; border-radius:10px;}
+.cts5911_wrap .box.photo .box_cont .title{margin-bottom:20px;}
+@media all and (max-width:1300px){
+    .cts5911_wrap .box.photo .box_item:before{height:340px;}
+}
+@media all and (max-width:1000px){
+    .cts5911_wrap .box.photo .box_item{width:auto;}
+    .cts5911_wrap .box.photo .box_item:before{display:none;}
+}
+
+/* 제도소개 */
+.cts5918_wrap p + .box{margin-top:15px;}
+.cts5918_wrap .box .box_title:nth-child(n+2){margin-top:20px;}
+
+/* 추진방안 */
+.cts5919_wrap .box .box_title:nth-child(n+2){margin-top:20px;}
+
+/* 부서별 예산현황 */
+.cts5899_wrap .emphasis{margin-top:0;}
+
+/* 재정공시 */
+.cts5900_wrap .link_box .link_item:nth-child(1) .link_anchor .title:before{width:147px; height:50px; border-radius:0; background:url("/site/www/images/contents/cts5900_img01.png");}
+.cts5900_wrap .link_box .link_item:nth-child(2) .link_anchor .title:before{width:174px; height:45px; border-radius:0; background:url("/site/www/images/contents/cts5900_img02.png");}
+
+/* 성북소개 - 동주민센터 - 우리 동 소개 */
+.dong .dong_box{position:relative; margin-bottom:30px; padding:40px; border-radius:20px 20px 80px 20px; background:#f0f5fb; font-size:0; line-height:0;}
+.dong .dong_box .dong_image{display:inline-block; width:250px; vertical-align:top;}
+.dong .dong_box .dong_image img{border-radius:20px 40px 40px 40px;}
+.dong .dong_box .dong_txt{display:inline-block; position:relative; width:calc(100% - 300px); margin-top:10px; margin-left:50px; padding-top:26px; color:#333; font-size:24px; font-family:'GmarketSans'; font-weight: 500; line-height:40px; vertical-align:top; word-break:keep-all;}
+.dong .dong_box .dong_txt:before{display:block; position:absolute; top:0; left:0; width:18px; height:14px; background:url("/site/www/images/contents/cts6090_icon.png") no-repeat;}
+.dong .dong_box .dong_txt span{font-size:30px;}
+.dong .table_scroll{width:100%; overflow-x:auto;}
+.dong .box{padding:18px 40px 18px; border-radius:20px;}
+.dong .box .dl > li{margin-top:0; padding:18px 0;}
+.dong .box .dl > li:before{top:auto; left:0; bottom:0; width:100%; height:1px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABRJREFUGFdj3LRp038/Pz9GBiAAACZuBAIHZI+XAAAAAElFTkSuQmCC);}
+.dong .box .dl > li:last-child:before{display:none;}
+.dong .box .dl .dt:has(+ .dd):before{display:none;}
+.dong .box .dl .dt{padding-right:27px; color:#317ad7; font-size:20px; line-height:30px; font-weight:500;}
+.dong .box .dl .dd{display:inline-block; width:calc(100% - 140px); vertical-align:top;}
+.dong h3 + p{word-break:keep-all;}
+@media all and (max-width:1300px){
+    .dong .dong_box .dong_txt{font-size:20px; line-height:30px;}
+    .dong .dong_box .dong_txt span{font-size:26px;}
+}
+@media all and (max-width:1300px) and (min-width:1001px){
+    .dong .dong_box .dong_txt br{display:none;}
+}
+@media all and (max-width:640px){
+    .dong .dong_box{padding:24px;}
+    .dong .dong_box .dong_image{display:block; margin:0 auto; text-align:center;}
+    .dong .dong_box .dong_txt{display:block; width:100%; margin-top:15px; margin-left:0; font-size:18px; text-align:center; line-height:28px;}
+    .dong .dong_box .dong_txt:before{right:0; margin:0 auto;}
+    .dong .dong_box .dong_txt span{font-size:24px;}
+    .dong .dong_box .dong_txt br{display:none;}
+    .dong .box{padding:12px 24px 12px;}
+    .dong .box .dl .dt{display:block; font-size:17px;}
+    .dong .box .dl .dd{display:block; width:100%;}
+}
+
+@media all and (min-width:641px){
+    .cts6130_wrap.dong .box .dl > li:nth-child(-n+2) .dd{width:calc(100% - 170px);}
+    .cts6140_wrap.dong .box .dl > li:nth-child(-n+2) .dd{width:calc(100% - 170px);}
+    .cts6170_wrap.dong .box .dl > li:nth-child(-n+2) .dd{width:calc(100% - 170px);}
+    .cts6175_wrap.dong .box .dl > li:nth-child(-n+2) .dd{width:calc(100% - 170px);}
+    .cts6185_wrap.dong .box .dl > li:nth-child(-n+4) .dd{width:calc(100% - 100px);}
+}
+
+/* 자치회관 소개 */
+.cts6190_wrap .center_box{position:relative; padding:35px 45px 157px; border-radius:40px 20px 120px 20px; background:#f0f5fb url("/site/www/images/contents/cts6190_img01.png") no-repeat right 50px bottom -29px;}
+.cts6190_wrap .center_box .title{position:relative; left:-45px; width:300px; margin-bottom:22px; padding:12px 20px 12px 45px; border-radius:0 40px 10px 0; background:#fff; box-shadow:20px 14px 38px 0 rgba(0,0,0,0.1); color:#103e89; font-size:24px; font-weight:500; font-family:'GmarketSans'; font-weight: 500; line-height:36px;}
+.cts6190_wrap .center_box .text{margin-bottom:18px; color:#4d4d4d; font-size:17px; line-height:28px; letter-spacing:-0.025em;word-break:keep-all;}
+.cts6190_wrap .center_box .text2{width:48%; color:#4d4d4d; font-size:17px; line-height:28px; letter-spacing:-0.025em;word-break:keep-all;}
+@media all and (max-width:1300px){
+    .cts6190_wrap .center_box{background-size:400px 236px;}
+    .cts6190_wrap .center_box .text2{width:100%;}
+}
+@media all and (max-width:1000px){
+    .cts6190_wrap .center_box{padding:35px 35px 157px;}
+    .cts6190_wrap .center_box .title{left:-35px; width:260px; padding:10px 20px 10px 35px; font-size:22px; line-height:32px;}
+}
+@media all and (max-width:640px){
+    .cts6190_wrap .center_box{padding:25px 25px 157px; background-size:300px 177px; background-position:right 0 bottom -29px;}
+    .cts6190_wrap .center_box .title{left:-25px; width:200px; padding:10px 20px 10px 25px; font-size:18px; line-height:28px;}
+    .cts6190_wrap .center_box .text, .cts6190_wrap .center_box .text2{font-size:15px; line-height:26px;}
+}
+
+/* 주민자치회 소개 */
+.cts6193_wrap .center_box{position:relative; padding:35px 45px 127px; border-radius:40px 20px 120px 20px; background:#f0f5fb url("/site/www/images/contents/cts6193_img01.png") no-repeat right 81px bottom -104px;}
+.cts6193_wrap .center_box .title{position:relative; left:-45px; width:300px; margin-bottom:22px; padding:12px 20px 12px 45px; border-radius:0 40px 10px 0; background:#fff; box-shadow:20px 14px 38px 0 rgba(0,0,0,0.1); color:#103e89; font-size:24px; font-weight:500; font-family:'GmarketSans'; font-weight: 500; line-height:36px;}
+.cts6193_wrap .center_box .text{width:50%; color:#4d4d4d; font-size:17px; line-height:28px; letter-spacing:-0.025em;word-break:keep-all;}
+.cts6193_wrap .box_list{font-size:0; line-height:0;}
+.cts6193_wrap .box_list .box{display:inline-block; width:calc(50% - 10px); min-height:203px; margin-right:20px; margin-bottom:20px; vertical-align:top;}
+.cts6193_wrap .box_list .box:nth-child(2n){margin-right:0;}
+@media all and (max-width:1300px){
+    .cts6193_wrap .center_box{padding-bottom:210px; background-size:350px 309px;}
+    .cts6193_wrap .center_box .text{width:100%;}
+    .cts6193_wrap .box_list .box{display:block; width:100%; min-height:auto; margin-right:0;}
+}
+@media all and (max-width:1000px){
+    .cts6193_wrap .center_box{padding:35px 35px 200px;}
+    .cts6193_wrap .center_box .title{left:-35px; width:260px; padding:10px 20px 10px 35px; font-size:22px; line-height:32px;}
+}
+@media all and (max-width:640px){
+    .cts6193_wrap .center_box{padding:25px 25px 140px; background-size:200px 177px; background-position:bottom -50px right 40px;}
+    .cts6193_wrap .center_box .title{left:-25px; width:200px; padding:10px 20px 10px 25px; font-size:18px; line-height:28px;}
+    .cts6193_wrap .center_box .text{font-size:15px; line-height:26px;}
+}
+
+/* 구민편의시설 */
+.cts6007_wrap .box.image{margin-bottom:20px;}
+.cts6007_wrap .box.image .box_image{margin-right:60px;}
+.cts6007_wrap .box.image .box_image img{border-radius:10px;}
+.cts6007_wrap .box.image .box_cont{width:calc(100% - 510px);}
+.cts6007_wrap .box.image .box_cont .title{position:relative; padding-bottom:20px;}
+.cts6007_wrap .box.image .box_cont .title:before{display:block; position:absolute; bottom:0; width:100%; height:1px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABRJREFUGFdj3LRp038/Pz9GBiAAACZuBAIHZI+XAAAAAElFTkSuQmCC);}
+@media all and (max-width:1300px){
+    .cts6007_wrap .box.image .box_image{margin-right:30px;}
+    .cts6007_wrap .box.image .box_cont{width:80%;}
+}
+@media all and (max-width:800px){
+    .cts6007_wrap .box.image .box_image{margin-right:0;}
+    .cts6007_wrap .box.image .box_cont{width:100%;}
+    .cts6007_wrap .box.image .box_cont .bu{text-align:left;}
+}
+
+/* 층별안내 */
+.cts6006_wrap .box{padding:19px 50px 40px 40px; border-color:#cacbce;}
+.cts6006_wrap .box:before{background:#f4f5f7;}
+.cts6006_wrap .floor_list{position:relative;}
+.cts6006_wrap .floor_item{font-size:0; line-height:0;}
+.cts6006_wrap .floor_item .floor{display:inline-block; width:100px; color:#103e89; font-size:24px; font-weight:500; text-align:center; line-height:36px; vertical-align:middle;}
+.cts6006_wrap .floor_item .floor span{font-size:30px; font-weight:600;}
+.cts6006_wrap .floor_item .floor .under{display:block; width:60px; height:24px; margin:0 auto; border-radius:7px; background:#103e89; color:#fff; font-size:14px; text-align:center; line-height:24px;}
+.cts6006_wrap .floor_item .txt{display:inline-block; position:relative; width:calc(100% - 133px); margin-left:33px; padding:29px 0 25px; color:#103e89; font-size:18px; font-weight:500; line-height:32px; vertical-align:middle; word-break:keep-all;}
+.cts6006_wrap .floor_item .txt:before{display:block; position:absolute; bottom:0; width:100%; height:1px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABRJREFUGFdj3LRp038/Pz9GBiAAACZuBAIHZI+XAAAAAElFTkSuQmCC);}
+.cts6006_wrap .floor_item:last-child .txt:before{display:none;}
+@media all and (max-width:1000px){
+    .cts6006_wrap .box{padding:19px 30px 25px 30px;}
+    .cts6006_wrap .floor_item .floor{width:70px; font-size:20px; line-height:30px;}
+    .cts6006_wrap .floor_item .floor span{font-size:24px;}
+    .cts6006_wrap .floor_item .txt{width:calc(100% - 90px); margin-left:20px; padding:20px 0; font-size:16px; line-height:28px;}
+}
+@media all and (max-width:640px){
+    .cts6006_wrap .box{padding:19px 20px 25px 20px;}
+    .cts6006_wrap .floor_item .floor{width:60px; font-size:17px; line-height:30px;}
+    .cts6006_wrap .floor_item .floor span{font-size:22px;}
+    .cts6006_wrap .floor_item .floor .under{width:45px; font-size:12px;}
+    .cts6006_wrap .floor_item .txt{width:calc(100% - 80px); margin-left:20px; padding:15px 0; font-size:14px; line-height:24px;}
+}
+
+/* 성북구민의 노래 */
+.cts5970_wrap .line{margin:50px 0 30px;}

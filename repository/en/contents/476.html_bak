@@ -1,0 +1,68 @@
+<div class="cts476_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Manhae Han Yong-un Simujang Residence</p>
+            <p class="txt">The former residence of independence fighter and poet “Manhae” Han Yong-un.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation Number</span>
+                    <span class="dd">Historic Site No. 550</span>
+                </li>
+                <li>
+                    <span class="dt">Details and Features</span>
+                    <span class="dd">Year-round, 09:00~18:00</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts476_img01.jpg" alt="Manhae Han Yong-un Simujang Residence 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts476_img02.jpg" alt="Manhae Han Yong-un Simujang Residence 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts476_img03.jpg" alt="Manhae Han Yong-un Simujang Residence 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Address</span> : 24, Seongbuk-ro 29-gil, Seongbuk-gu, Seoul</p>
+            <a href="https://kko.kakao.com/w1raFeSIJu" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Originally designated by the Seoul Metropolitan Government as a Local Cultural Heritage and Monument No.7 on July 5, 1985, Manhae Han Yong-un's Simujang Residence was promoted to a National Historic Site (No. 550) on April 8, 2019. The house served as the residence of Han Yong-un, one of the 33 national leaders during the March 1st Independence Movement and the author of “The Silence of Love: Poems.” from 1933 to 1944. When you enter the gate to the east, you will find Simujang, a tiled house facing north, an administrative office, and a Juniper tree planted by Han Yong-un himself.<br/>
+            Simujang is a modest house with just five rooms. At the center is the living room, with a heated room to the left and kitchen to the right. And behind the kitchen is a cooking room for preparing meals.<br/>
+            The heated room, which Han Yong-un used as his study, has a signboard saying Simujang (尋牛莊). It is said that Han Yong-un chose the name after reading a passage in the Buddhist scriptures that compared the process of finding enlightenment to finding a cow. Seongbuk-dong, where Simujang is located, was developed as a residential area when Seoul expanded in the 1930s. However, unlike most of the other houses in the area, Simujang has a modest and understated facade.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

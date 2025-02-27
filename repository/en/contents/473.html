@@ -1,0 +1,64 @@
+<div class="cts473_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Sukjeongmun Gate <span>[Historic Site No. 10]</span></p>
+            <p class="txt">One of the four main gates of the Hanyangdoseong (Seoul City Wall), known as the Northern Gate ("Bukdaemun").</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation No.</span>
+                    <span class="dd">Historic Site No. 10</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts473_img01.jpg" alt="Sukjeongmun 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts473_img02.jpg" alt="Sukjeongmun 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts473_img03.jpg" alt="Sukjeongmun 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Location</span> : Samcheong-dong, Jongno-gu, Seoul</p>
+            <a href="https://kko.kakao.com/epAMCi5NKA" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Sukjeongmun Gate is the name of the northern gate of Hanyang (Seoul) during the Joseon dynasty. The gate was built in 1396 (5th year of King Taejo’s reign). Originally called Sukcheongmun, it was closed in 1413 for geomantic reasons and access was restricted. Representing water in the yin-yang and five elements theory, Sukcheongmun was opened during droughts to pray for rain and closed when it rained excessively. The name Sukjeongmun first appeared in records in 1523 (18th year of King Jungjong’s reign) alongside references to Bukjeongmun, suggesting that the name evolved from Sukcheongmun over time. <br /><br />
+
+            Although it was the northern gate of the city wall, Sukjeongmun was located in a steep mountainous area, making it impractical for regular use. Access was restricted in 1968 to guard the Cheongwadae, but the gate was reopened to the public in April 2006. It was designated as Historic Site No. 10 on January 2, 1963, and restored to its current form in 1976. It is part of the larger Historic Site No. 10, the Hanyang City Wall.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

@@ -1,0 +1,80 @@
+<div class="cts478_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">The Choi Sun-u Residence in Seongbuk-dong</p>
+            <p class="txt">The former residence of Choi Sun-u between 1976 until his death.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation Number</span>
+                    <span class="dd">National Registered Cultural Heritage No. 268</span>
+                </li>
+                <li>
+                    <span class="dt">Details and Features</span>
+                    <span class="dd">Tueday~Saturday, 10:00~16:00</span>
+                </li>
+                <li>
+                    <span class="dt">Closed Days</span>
+                    <span class="dd">Closed every Monday, Sunday, and in winter (December ~ March)</span>
+                </li>
+                <li>
+                    <span class="dt">Website</span>
+                    <span class="dd"><a href="http://www.ntculture.or.kr/culturalHeritage/guide/view?id=414" target="_blank" title="new window" class="text_btn blank"><span>www.ntculture.or.kr</span></a></span>
+                </li>
+                <li>
+                    <span class="dt">Cultural Heritage Registration Number</span>
+                    <span class="dd">02-3675-3402</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts478_img01.jpg" alt="The Choi Sun-u Residence 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts478_img02.jpg" alt="The Choi Sun-u Residence 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts478_img03.jpg" alt="The Choi Sun-u Residence 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Address</span> : 9, Seongbuk-ro 15-gil, Seongbuk-gu, Seoul</p>
+            <a href="https://kko.kakao.com/8LoCFE8buf" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            This is the old residence of “Hyegok” Choi Sun-u (1916-1984), an archaeological scholar and art critic. It is owned and managed by the National Trust Cultural Heritage Fund, and was designated as National Registered Cultural Property No. 268 on September 19, 2006.<br/>
+            Built in the traditional Hanok-style sometime during the 1930s, the main building has an L-shaped configuration, and an annex also with as L-shaped configuration, resulting in an enclosed rectangular structure. The house has a courtyard in the middle, which features a small well.
+            Most notably, this house served as the final residence of Choi Sun-u, the former Director of the National Museum of Korea, between 1976 and 1984. Choi was known for his work in discovering and preserving traditional Korean beauty, and his masterpiece book “Standing by the Sloping Pillar at Muryangsujeon.” The Korean National Trust, a civic organization, purchased and restored the house, which had become abandoned and dilapidated. It was restored as the first heritage site under the “Civic Cultural Heritage” program led by the Korean National Trust.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

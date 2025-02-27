@@ -1,0 +1,68 @@
+<div class="cts477_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">House of "Sangheo" Lee Tae-jun</p>
+            <p class="txt">The residence where novelist "Sangheo" Lee Tae-jun lived and wrote, now operating as a traditional tea house.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation No.</span>
+                    <span class="dd">Municipal Folk Cultural Heritage No. 11</span>
+                </li>
+                <li>
+                    <span class="dt">Hours</span>
+                    <span class="dd">Tue-Fri: 11:30 AM-6 PMWeekends: 11:30 AM-10 PM</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts477_img01.jpg" alt="The Lee Tae-jun Residence 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts477_img02.jpg" alt="The Lee Tae-jun Residence 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts477_img03.jpg" alt="The Lee Tae-jun Residence 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Location</span> : 8 Seongbuk-ro 26-gil, Seongbuk-gu, Seoul</p>
+            <a href="https://kko.kakao.com/BRujFQkuGk" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            This house is where novelist Lee Tae-jun, known for elevating the artistic quality of Korean short stories, resided from 1933 to 1946, during which he wrote works such as Dalbam (Moonlit Night) and Doldari (Stone Bridge). Currently, Lee Tae-jun's grand-niece runs the house as a traditional tea house called Suyeon Sanbang (壽硯山房). <br /><br />
+
+            Built in 1933, the house is an improved hanok (traditional Korean house) without an annex, comprising only the main building that combines the sarangchae (men’s quarters) and anchae (women’s quarters). The main building has a hip-and-gable roof at the front and a gable roof at the back, forming an L-shaped structure. The central two rooms serve as the main hall (daecheong), with a one-room anbang (main room) to the south and a small, one-room nu-marubang (raised wooden floor) in front. Behind the anbang is a half-room-sized kitchen. To the north of the daecheong is a one-room-sized geonneonbang (side room), and a narrow wooden veranda runs along the front of the daecheong and geonneonbang. Behind the geonneonbang is a one-room-sized back room.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

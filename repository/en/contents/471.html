@@ -1,0 +1,74 @@
+<div class="cts471_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Uireung <span>(Historic Site No. 204)</span></p>
+            <p class="txt">Tomb of King Gyeongjong, the 20th King of Joseon, and his second queen, Queen Seonui</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation No.</span>
+                    <span class="dd">Historic Site No. 204</span>
+                </li>
+                <li>
+                    <span class="dt">Description & Features</span>
+                    <span class="dd">Tomb of King Gyeongjong, the 20th King of Joseon, and his queen consort, Queen Seonui</span>
+                </li>
+                <li>
+                    <span class="dt">Hours</span>
+                    <span class="dd">Tue-Sun: 9 AM-6 PM (hours may vary in summer and winter)</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts471_img01.jpg" alt="Uireung 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts471_img02.jpg" alt="Uireung 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts471_img03.jpg" alt="Uireung 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Location</span> : 146-20 Hwarang-ro 32-gil, Seongbuk-gu, Seoul (Seokgwan-dong)</p>
+            <a href="https://kko.kakao.com/iXw5axVvJn" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Designated as Historic Site No. 204, this tomb is for King Gyeongjong of Joseon (reign: 1720–1724) and his queen, Queen Seonui. Born to Royal Noble Consort Hui of the Jang clan, King Gyeongjong was in poor health and passed away just four years into his reign. <br /><br />
+
+            Typically, royal twin tombs are arranged side by side, but this tomb follows a vertical arrangement known as Sanghaibongreung (上下異封陵), where one tomb is placed in front of the other. This arrangement, based on geomantic principles, first appeared at Yeongneung, the tomb of King Hyojong and Queen Inseon. <br /><br />
+
+            Instead of a surrounding stone screen, the tomb has a twelve-section balustrade, with the twelve zodiac animals inscribed according to directional symbols on the posts. Outside the balustrade are guardian stones, lanterns, and statues of civil and military officials, as well as animals like horses, sheep, and tigers. The layout and style of the tomb resemble the simpler, smaller scale of later Joseon royal tombs, as seen in Myeongneung. While the queen's tomb has a similar arrangement, it lacks a rear enclosure.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

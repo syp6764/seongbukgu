@@ -1,0 +1,80 @@
+<div class="cts478_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">House of Choi Sunu in Seongbuk-dong</p>
+            <p class="txt">The traditional residence where the late Choi Sunu, an esteemed scholar and former director of the National Museum of Korea, lived from 1976 until his passing.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation No.</span>
+                    <span class="dd">Cultural Heritage No. 268</span>
+                </li>
+                <li>
+                    <span class="dt">Hours</span>
+                    <span class="dd">Tue-Sat: 10 AM-4 PM</span>
+                </li>
+                <li>
+                    <span class="dt">Closed</span>
+                    <span class="dd">Every Monday and Sunday, and during winter months (December to March)</span>
+                </li>
+                <li>
+                    <span class="dt">Website</span>
+                    <span class="dd"><a href="http://www.nt-heritage.org/choisunu/" target="_blank" rel="noopener noreferrer" title="new window" class="text_btn blank"><span>http://www.nt-heritage.org/choisunu/</span></a></span>
+                </li>
+                <li>
+                    <span class="dt">Contact</span>
+                    <span class="dd">(+82) 2-3675-3402</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts478_img01.jpg" alt="The Choi Sun-u Residence 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts478_img02.jpg" alt="The Choi Sun-u Residence 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts478_img03.jpg" alt="The Choi Sun-u Residence 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Location</span> : 9 Seongbuk-ro 15-gil, Seongbuk-gu, Seoul</p>
+            <a href="https://kko.kakao.com/8LoCFE8buf" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            The House of Choi Sunu in Seongbuk-dong is the former residence of Hye-gok Choi Sunu (1916-1984), an art historian and critic. Owned and managed by the National Trust Cultural Heritage Fund, it was designated as Registered Cultural Heritage No. 268 on September 19, 2006. <br /><br />
+
+            This hanok, built in the 1930s, features an L-shaped main building and a similarly shaped annex, creating a square layout with the servant quarters facing them. At the center is an inner courtyard, with a small well beside it. Choi Sunu, former director of the National Museum of Korea, dedicated his life to discovering Korean aesthetics. He lived here from 1976 until his death in 1984, and it was where he wrote his notable work, Leaning on the Pillars of Muryangsujeon. When the house faced demolition, the Korean National Trust, a civic organization, purchased and restored it, earning it the title of “Citizen Cultural Heritage No. 1.”
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

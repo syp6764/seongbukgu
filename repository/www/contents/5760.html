@@ -1,0 +1,222 @@
+<div class="title_box n10">
+    <div class="box_wrap">
+        <h3 class="box_title">옴부즈만 민원신청 주의사항</h3>
+        <p class="box_text">개인정보보호를 위해 주민등록번호, 휴대폰 번호 등은 글 내용에 포함하지 않도록 주의하시기 바랍니다.<br/>
+            구정과 무관한 내용, 비실명, 저속한 표현, 타인의 명예훼손, 반사회적인 글 등의 게시글은 예고없이 삭제될 수 있음을 알려드립니다.</p>
+    </div>
+</div>
+
+<div class="p-wrap bbs bbs__list">
+    <form name="bbsNttSearchForm" action="./selectBbsNttList.do" method="get" class="boardSearchForm">
+        <fieldset>
+            <legend>게시물 검색</legend>
+            <div class="card card--bgcolor p-search type2">
+                <div class="p-form-group">
+                    <div class="p-form_line">
+                        <div class="input_wrap">
+                            <span class="input_title">기간</span>
+                            
+                            <div class="p-date_wrap">
+                                <div class="p-date-group">
+                                    <div class="p-form-group p-date" data-date="datepicker">
+                                        <input type="text" name="" class="p-input" value="">
+                                        <div class="p-input__split">
+                                            <button type="button" class="p-input__item p-date__icon">달력 열기</button>
+                                        </div>
+                                    </div>
+                                    <span class="p-form__split">~</span>
+                                    <div class="p-form-group p-date" data-date="datepicker">
+                                        <input type="text" name="" class="p-input" value="">
+                                        <div class="p-input__split">
+                                            <button type="button" class="p-input__item p-date__icon">달력 열기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-btn_group">
+                                <button type="button" class="p-button grey_btn"> 일주일</button>
+                                <button type="button" class="p-button grey_btn"> 최근 1개월</button>
+                                <button type="button" class="p-button grey_btn"> 최근 3개월</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-form_line">
+                        <span class="input_wrap">
+                            <span class="input_title">검색어</span>
+                            <input type="text" name="" id="" class="p-input p-input--beside" title="검색단어 입력" value="" placeholder="검색어를 입력하세요">
+                        </span>
+                        <span class="p-form-group__button">
+                            <button type="submit" class="p-button search">검색</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="row">
+        <div class="col-12 col-sm-24 margin_t_10 small">
+            <div class="bbs_page">
+                <span class="item count">총게시물 :
+                    <em class="em_black" data-mask="#,##0" data-mask-reverse="true">0</em>건</span>
+                <span class="item page">페이지 : <em class="em_b_black">1</em> / 1</span>
+            </div>
+        </div>
+        <div class="col-12 col-sm-24 right">
+            <button type="submit" class="p-button primary">신청</button>
+            <button type="button" class="p-button secondary">내가 쓴 글</button>
+        </div>
+    </div>
+    <form name="bbsNttForm" method="post" action="">
+        <fieldset>
+            <legend>게시물 목록</legend>
+            <table class="p-table simple" data-table="rwd" data-tabletype="simple" data-breakpoint="760">
+                <caption>{게시판명} 목록 - 번호, 제목, 작성자, 조회수, 작성일 정보 제공</caption>
+                <colgroup>
+                    <col style="width:8%">
+                    <col>
+                    <col>
+                    <col style="width:10%">
+                    <col style="width:10%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">조회수</th>
+                    <th scope="col">작성일</th>
+                </tr>
+                </thead>
+                <tbody class="text_center">
+                <tr class="p-notice">
+                    <td><span class="p-badge">공지</span></td>
+                    <td class="p-subject"><a href="#">2014 홍천군종합사회복지관 하반기 프로그램 </a></td>
+                    <td>관리자</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">15642</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <a href="#">2014년 정기분 재산세(건축물,주택) 납부안내 재산세(건축물,주택) 납부안내 2014년 정기분 재산세(건축물,주택) 납부안내 재산세(건축물,주택) 납부안내</a>
+                        <span class="p-icon p-icon-new p-icon__new">새글</span></td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">15642</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <a href="#">2014년 정기분 재산세(건축물,주택) 납부안내 재산세(건축물,주택) 납부안내</a>
+                        <span class="p-icon p-icon-new p-icon__new">새글</span>
+                        <span class="p-icon p-icon-new p-icon__hot">핫이슈</span></td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <a href="#">2014년 정기분 재산세(건축물,주택) 납부안내 재산세(건축물,주택) 납부안내</a>
+                        <span class="p-subject__comment">[1]</span></td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject"><a href="#">
+                        <del>2014년 정기분 재산세(건축물,주택)</del>
+                    </a> <span class="p-icon p-icon-new p-icon__deleted">삭제된 글</span>
+                        <div class="p-deleted__info">삭제자 : 홍길동(abcec) / 삭제일 : 2016-06-06</div>
+                    </td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <span class="p-icon p-icon-new p-icon__secret">비밀글</span><a href="#">2014년 정기분 재산세(건축물,주택)</a>
+                    </td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <span class="p-icon p-icon-new p-icon__reply">답변</span><a href="#">2014년 정기분 재산세(건축물,주택)</a>
+                    </td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <span class="indent10"></span><span class="p-icon p-icon-new p-icon__reply">답변</span><a href="#">2014년 정기분 재산세(건축물,주택)</a>
+                    </td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="p-subject">
+                        <span class="indent10"></span><span class="indent10"></span><span class="p-icon p-icon-new p-icon__reply">답변</span><a href="#">2014년 정기분 재산세(건축물,주택)</a>
+                    </td>
+                    <td>재무과</td>
+                    <td data-mask="#,##0" data-mask-reverse="true">42</td>
+                    <td>
+                        <time>2016-08-22</time>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+    <div class="p-pagination">
+        <div class="p-page">
+            <span class="p-page__control">
+                <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                <a href="#" class="p-page__link prev-one">이전 페이지</a>
+            </span>
+            <span class="p-page__link-group">
+                <strong title="현재 1페이지" class="p-page__link active">1</strong>
+                <a href="" title="2페이지 이동" class="p-page__link">2</a>
+                <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                <a href="" title="10페이지 이동" class="p-page__link">10</a>
+            </span>
+            <span class="p-page__control">
+                <a href="#" class="p-page__link next-one">다음 페이지</a>
+                <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+            </span>
+        </div>
+    </div>
+</div>

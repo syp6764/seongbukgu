@@ -1,0 +1,66 @@
+<div class="cts473_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Hyehwamun Gate <span>[Historic Site No. 10]</span></p>
+            <p class="txt">A gate installed in the northeastern part of the Hanyangdoseong (Seoul City Wall), known as the Small East Gate ("Dongsomun").</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation No.</span>
+                    <span class="dd">Historic Site No. 10</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts474_img01.jpg" alt="Hyehwamun 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts474_img02.jpg" alt="Hyehwamun 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts474_img03.jpg" alt="Hyehwamun 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Location</span> : Hyehwa-dong, Jongno-gu, Seoul</p>
+            <a href="https://kko.kakao.com/epp0rwA6xR" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Hyehwamun, also known as the 'East Small Gate (Dongso-mun),' was built in 1397 (5th year of King Taejo’s reign) when the Hanyang City Wall was constructed to fortify the northeastern part of the city. At that time, the city had four main gates: Sungnyemun (Namdaemun), Heunginjimun (Dongdaemun), Sukjeongmun (Bukdaemun), and Donuimun (Seodaemun), along with four smaller gates: Gwanghuimun (Namsomun), Hyehwamun (Dongsomun), Changuimun (Buksomun), and Soeimun (Seosomun). <br /><br />
+
+            Originally named Honghwamun when first erected, the name was changed to Hyehwamun in 1511 (6th year of King Jungjong’s reign) to avoid confusion after the eastern gate of the newly built Changgyeong Palace was also named Honghwa in 1483 (4th year of King Seongjong’s reign). The gate tower was rebuilt in 1684 (10th year of King Sukjong’s reign). As the northern gate, Sukjeongmun was closed to public access, and Hyehwamun served as a crucial exit towards Yangju and Pocheon. <br /><br />
+
+            However, during the Japanese occupation, city planning and the construction of a tram line between Hyehwa-dong and Donam-dong led to the gate's destruction. It was restored as part of the Seoul City Wall project that began in 1975 and was completed in 1980, with further restoration in 1992. Hyehwamun is part of Historic Site No. 10, the Hanyang City Wall.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

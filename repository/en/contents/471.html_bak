@@ -1,0 +1,72 @@
+<div class="cts471_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Uireung</p>
+            <p class="txt">The tombs of King Gyeongjong (the 20th king of the Joseon Dynasty) and Queen Seonui.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation Number</span>
+                    <span class="dd">Historic Site No. 204</span>
+                </li>
+                <li>
+                    <span class="dt">Details and Features</span>
+                    <span class="dd">The tombs of King Gyeongjong (the 20th king of the Joseon Dynasty) and Queen Seonui</span>
+                </li>
+                <li>
+                    <span class="dt">Opening Hours</span>
+                    <span class="dd">Tueday~Sunday, 09:00~18:00 (Opening hours change between summer and winter)</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts471_img01.jpg" alt="Uireung 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts471_img02.jpg" alt="Uireung 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts471_img03.jpg" alt="Uireung 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Address</span> : 146-20, Hwarang-ro 32-gil, Seongbuk-gu</p>
+            <a href="https://kko.kakao.com/iXw5axVvJn" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Historical site No. 204 is the tombs of King Gyeongjong (reign: 1720~1724, Joseon Dynasty) and wife, Queen Seonui. King Gyeongjong (the son of Huibin Jang) died four years after he ascended to the throne due to poor health, which limited his capacities since childhood.<br/>
+            Typically, royal tombs are arranged adjacently. However, at Uireung, the king and the queen were arranged vertically - one at the front, the other at the rear. This vertical arrangement was based on the theory of Feng Shui, which first appeared in the construction of Yeongneung - the tombs of King Hyojong and Queen Inseon.<br/>
+            Inside the royal tomb, a balustrade with 12 sections was installed instead of the more traditional folding screen, and each pillar of this balustrade features one of the twelve traditionally auspicious animals. Outside the balustrade is a Mangjuseok, a Jangmyeongdeung, a Munmuseok, and other stone sculptures in the shapes of a horse, sheep, and tiger. The layout and style of the stones were chosen to mimic a small and modest Hureung style. Meanwhile, the stone structure of the Queen’s tomb mirrors that of the King except for a stone wall around the rear.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

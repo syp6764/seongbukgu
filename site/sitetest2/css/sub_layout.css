@@ -1,0 +1,95 @@
+/* (주)한신정보기술 서정한 - 2019.02. */
+
+/*
+#header .lnbbox .nav:after{position:absolute; top:auto; bottom:-1px; left:0; display:block; width:100%; height:1px; content:''; transition:background-color 250ms linear;}
+.menu_active #header .lnbbox .nav:after{background-color:#cccccc;}
+*/
+#header .header_box .wrap .logo a{background-image:url(../images/sub/logo.png);}
+#header .lnbbox:before{position:absolute; top:0; left:0; display:block; width:100%; height:1px; background-color:rgba(255, 255, 255, 0.13); content:'';}
+#header .lnbbox:after{position:absolute; top:106px; left:0; display:block; width:100%; height:1px; background-color:rgba(255, 255, 255, 0.13); content:'';}
+
+.menu_active .lnb_topbox{background-color:#127edd;}
+.lnb_topbox .wrap .gnb .floatbox ul li:before{background-color:rgba(255, 255, 255, 0.17);}
+.lnb_topbox .wrap .gnb .floatbox ul li a{color:#FFF;}
+#header .lnbbox .nav .depth1_list:before{background-color:transparent;}
+
+@keyframes visualAnimation{
+0%{opacity:0; transform:scale(1.4);}
+100%{opacity:1; transform:scale(1);}
+}
+
+@keyframes visualtextAnimation{
+0%{opacity:0; transform:translateY(50px);}
+100%{opacity:1; transform:translateY(0);}
+}
+
+.sub_visual{position:relative; z-index:12;}
+.sub_visual:before{position:absolute; bottom:0; left:0; display:block; width:calc((100% - 1270px) / 2); height:60px; background-color:#FFF; content:''; z-index:4;}
+.sub_visual .visualbox{position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden;}
+.sub_visual .visualbox .visual_image{position:relative; height:100%; background-repeat:no-repeat; background-position:center center; background-image:url(../images/sub/sub_visual01.jpg); background-size:cover; z-index:1; opacity:0; transform:scale(1.4); animation-name:visualAnimation; animation-fill-mode:forwards; animation-duration:1.4s; animation-iteration-count:1; animation-timing-function:ease-in-out;}
+.sub_visual .wrap{padding-top:149px; padding-bottom:60px; z-index:3;}
+.sub_title{display:table; width:100%;}
+.sub_title .innerbox{display:table-cell; width:100%; height:222px; text-align:center; vertical-align:middle;}
+.sub_title .innerbox p{line-height:42px; color:#FFF; font-size:36px; font-weight:600; letter-spacing:-0.03em; opacity:0; transform:translateY(50px); animation-name:visualtextAnimation; animation-fill-mode:forwards; animation-delay:0.7s; animation-duration:0.6s; animation-iteration-count:1; animation-timing-function:ease-in-out;}
+.path{position:absolute; bottom:0; left:0; width:100%; background-color:rgba(0, 0, 0, 0.7);}
+.path ul li.list{position:relative; float:left; width:calc((100% - 60px) / 3); border-right:rgba(255, 255, 255, 0.2) solid 1px; box-sizing:border-box;}
+.path ul li.list:last-child{border-right:none;}
+.path ul li.list.home{width:60px; border-right:none;}
+.path ul li.list.home a{display:block; height:60px; background-color:#0e57d0; background-repeat:no-repeat; background-position:center center; background-image:url(../images/sub/path_home.png); color:transparent; font-size:0;}
+.path ul li.list button{border:none; width:100%; margin:0; padding:18px 30px; text-align:left; vertical-align:top; color:rgba(255, 255, 255, 0.8); transition-property:background-color, color; transition-duration:200ms; transition-timing-function:ease-in-out;}
+.path ul li.list.active button{background-color:#004397; color:#FFF;}
+.path ul li.list button span{position:relative; display:block; padding-right:16px; line-height:24px; font-size:17px; letter-spacing:-0.03em;}
+.path ul li.list button:hover span{text-decoration:underline;}
+.path ul li.list button span:before{position:absolute; top:8px; right:0; display:block; width:14px; height:9px; background:url(../images/sub/path_icon.png) no-repeat; content:''; transition:transform 200ms ease-in-out;}
+.path ul li.list.active button span:before{transform:rotateX(180deg);}
+.path ul li.list .layer{position:absolute; top:60px; left:0; display:none; width:calc(100% + 1px); background-color:#005bac;}
+.path ul li.list:last-child .layer{width:100%;}
+.path ul li.list .layer ul{padding:17px 20px 17px 26px;}
+.path ul li.list .layer ul li{margin-top:8px;}
+.path ul li.list .layer ul li:first-child{margin-top:0;}
+.path ul li.list .layer ul li a{display:block; line-height:22px; color:#b3cee6; font-size:16px; letter-spacing:-0.03em; transition-property:color, font-weight; transition-duration:200ms; transition-timing-function:ease-in-out;}
+.path ul li.list .layer ul li a:hover{color:#FFF; font-weight:600;}
+
+#container{padding-bottom:50px;}
+.mobile_path{display:none; background-color:#f3f3f3;}
+.mobile_path .wrap{padding:8px 0;}
+.mobile_path ul li{position:relative; float:left; margin-left:6px; padding-left:11px;}
+.mobile_path ul li a{display:block; line-height:16px; color:#6a6a6a; font-size:12px; letter-spacing:-0.03em;}
+.mobile_path ul li span{display:block; line-height:16px; color:#6a6a6a; font-size:12px; letter-spacing:-0.03em;}
+.mobile_path ul li.home{margin-left:0; padding-left:0;}
+.mobile_path ul li.home a{display:block; width:14px; height:16px; background:url(../images/sub/mobile_path_home.png) no-repeat center center; color:transparent; font-size:0;}
+.mobile_path ul li:nth-child(2){padding-left:0;}
+.mobile_path ul li:before{position:absolute; top:3px; left:0; display:block; width:6px; height:10px; background:url(../images/sub/mobile_path_arrow.png) no-repeat; content:'';}
+.mobile_path ul li.home:before, .mobile_path ul li:nth-child(2):before{display:none;}
+
+.sub_head{position:relative; z-index:11;}
+.sub_head .head_title{border-bottom:#cccccc solid 1px; padding:54px 0 26px;}
+.sub_head .head_title h2{line-height:44px; text-align:center; color:#2e2e2e; font-size:36px; font-weight:200; letter-spacing:-0.03em;}
+.sub_head .tab_menu_box{position:relative; margin-top:40px;}
+.sub_head .tab_menu_box .tab_menu_button{position:relative; display:none; border:#0e57d0 solid 3px; width:100%; height:auto; margin:0; padding:11px 33px 11px 17px; line-height:20px; text-align:left; color:#0e57d0; font-size:15px; letter-spacing:-0.03em;}
+.sub_head .tab_menu_box .tab_menu_button:before{position:absolute; top:17px; right:17px; display:block; width:14px; height:8px; background:url(../images/sub/tab_menu_button.png) no-repeat; content:'';}
+
+.tab_menu ul li{float:left; width:25%;}
+.tab_menu ul li a{position:relative; display:block; border-color:#d6d6d6; border-style:solid; border-width:0 1px 1px 0; background-color:#f9f9f9; height:62px; padding:0 36px 0 20px; line-height:62px; vertical-align:middle; color:#777777; transition-property:border-color, background-color, color; transition-duration:200ms; transition-timing-function:ease-in-out;}
+.tab_menu ul li:nth-child(-n+4) a{border-width:1px 1px 1px 0;}
+.tab_menu ul li:nth-child(4n+1) a{border-width:1px;}
+.tab_menu ul li.active a, .tab_menu ul li a:hover{border-color:#0e57d0; background-color:#0e57d0; color:#FFF;}
+.tab_menu ul li a:before{position:absolute; top:calc(50% - 4px); right:20px; display:block; width:14px; height:8px; background-repeat:no-repeat; background-position:center top; background-image:url(../images/sub/tab_menu_icons.png); content:''; transition-property:background-position, transform; transition-duration:200ms; transition-timing-function:ease-in-out;}
+.tab_menu ul li.active a:before, .tab_menu ul li a:hover:before{background-position:center bottom; transform:rotateX(180deg);}
+.tab_menu ul li a span{display:inline-block; margin-bottom:4px; line-height:22px; vertical-align:middle; font-size:18px; letter-spacing:-0.03em;}
+.tab_menu ul li a:hover span{text-decoration:underline;}
+
+#contents{width:100%;max-width:1270px;min-height:400px; margin:50px auto 0;}
+
+@media screen and (max-width:1270px){
+.sub_visual:before{width:calc((100% - 1000px) / 2);}
+}
+
+
+
+
+
+
+
+
+

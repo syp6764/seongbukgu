@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* tablet */
+@media screen and (max-width:1000px){
+#header .lnbbox .nav:after{display:none;}
+.sub_visual{display:none;}
+.mobile_path{display:block;}
+.tab_menu ul li a{padding:0 24px 0 4%;}
+.tab_menu ul li a:before{right:11px;}
+.tab_menu ul li a span{line-height:18px; font-size:15px;}
+}
+
+/* mobile */
+@media screen and (max-width:640px){
+.sub_head .head_title{padding:26px 0 11px;}
+.sub_head .head_title h2{line-height:28px; font-size:21px;}
+.tab_menu ul li{width:50%;}
+.tab_menu ul li:nth-child(-n+4) a{border-width:0 1px 1px 0;}
+.tab_menu ul li:nth-child(-n+2) a{border-width:1px 1px 1px 0;}
+.tab_menu ul li:nth-child(odd) a{border-width:1px;}
+.sub_head .tab_menu_box{margin-top:30px;}
+.sub_head .tab_menu_box .tab_menu_button{display:inline-block;}
+.sub_head .tab_menu_box .tab_menu{position:absolute; top:100%; left:0; display:none; width:100%;}
+.sub_head .tab_menu_box .tab_menu ul li{float:none; width:auto;}
+.sub_head .tab_menu_box .tab_menu ul li a{border-width:0 1px 1px; background-color:#FFF; height:auto; padding:13px 4%; line-height:20px;}
+.sub_head .tab_menu_box .tab_menu ul li:first-child a{border-width:1px;}
+.sub_head .tab_menu_box .tab_menu ul li.active a, .sub_head .tab_menu_box .tab_menu ul li a:hover{border-color:#072f8c; background-color:#072f8c;}
+.sub_head .tab_menu_box .tab_menu ul li a:before{display:none;}
+.sub_head .tab_menu_box .tab_menu ul li a span{display:block; margin-bottom:0; line-height:20px;}
+}

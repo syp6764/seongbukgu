@@ -1,0 +1,67 @@
+<div class="cts477_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">The Lee Tae-jun Residence</p>
+            <p class="txt">The former residence of novelist “Sangheo” Lee Tae-jun. Currently, a traditional tea house.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Cultural Heritage Designation Number</span>
+                    <span class="dd">City and Provincial Folk Cultural Property No. 11</span>
+                </li>
+                <li>
+                    <span class="dt">Details and Features</span>
+                    <span class="dd">Tuesday~Friday 11:30~18:00, Weekends 11:30~22:00</span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts477_img01.jpg" alt="The Lee Tae-jun Residence 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts477_img02.jpg" alt="The Lee Tae-jun Residence 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts477_img03.jpg" alt="The Lee Tae-jun Residence 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Address</span> : 8, Seongbuk-ro 26-gil, Seongbuk-gu, Seoul</p>
+            <a href="https://kko.kakao.com/BRujFQkuGk" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            This house served as the residence of novelist Lee Tae-jun, who is considered to have improved the artistic style of Korean short stories, between 1933 to 1946. It is also the house where Lee wrote some of his most popular works, including “Moonlit Night” and “Stone Bridge.” Currently, Lee Tae-jun's great granddaughter runs a traditional tea house under the name of “Suyeonsanbang.”<br/>
+            This house was built in a modern Hanok-style in 1933. It features only a main building that combines the traditional Sarangchae and Anchae buildings. The main building has a gambrel roof to the front, and a double gambrel roof to the rear. Layout-wise, the building is an L-shaped structure. The two central rooms make up the living area, while the room to the south serves as the master bedroom. The master bedroom has a small open floor, and at the rear is a kitchen that is half as large as the other rooms. On the north side of the living area is a full-sized guest room, and there is a wide wooden porch separating the living area and guest room. Behind the guest room is a full-sized second room.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

@@ -1,0 +1,100 @@
+<div class="cts403_wrap">
+    <div class="about">
+        <div class="about_box n1">
+            <img src="/site/en/images/contents/cts403_img01.jpg" alt="Lee Seung-ro, Mayor of Seongbuk-gu">
+        </div>
+        <div class="about_box n2">
+            <div class="title">
+                Lee Seung-ro, <br />
+                Mayor of Seongbuk-gu
+            </div>
+            <div class="about_box_wrap">
+                <p class="about_title">Education</p>
+                <ul class="about_list">
+                    <li class="about_item">
+                        <p class="date">2001 ~ 2005</p>
+                        <p>
+                            Graduated from the Department of Urban and Local
+                            Administration (Master of Public Administration),
+                            Graduate School of Policy Studies at Korea University
+                        </p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">1975 ~ 1978</p>
+                        <p>Graduated from Jeongeup Jeil High School</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about_box n3">
+            <div class="about_box_wrap">
+                <p class="about_title">Awards</p>
+                <ul class="about_list">
+                    <li class="about_item">
+                        <p class="date">December 11, 2017</p>
+                        <p>Received a commendation from President Moon Jae-in (National Unification Advisory Council)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">November 30, 2017</p>
+                        <p>Won the Most Outstanding Award at the 2017 Korea YIP Protocol Awards (Yeouido Institute for Political Policy Studies)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">October 17, 2017</p>
+                        <p>Won the Grand Prize at the Seoul Social Welfare Awards (Seoul Welfare Newspaper)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">September 27, 2017</p>
+                        <p>Won the Most Outstanding Representative Award (Eco-friendly category) at the 2017 National Regional Council Awards</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">June 16, 2017</p>
+                        <p>Received a 1st class prize from the Democratic Party of Korea (19th Presidential election)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">January 7, 2016</p>
+                        <p>Won the Outstanding Regional Representative Award at the 2015 Local Representative Manifesto Awards (Korea Manifesto Center)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about_box n4">
+            <div class="about_box_wrap">
+                <p class="about_title">Career</p>
+                <ul class="about_list">
+                    <li class="about_item">
+                        <p class="date">July 2018 ~ (current)</p>
+                        <p>Mayor of Seongbuk-gu (7th democratically elected administration)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">March 2018 ~ (current)</p>
+                        <p>Adjunct Professor, Hansung University</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">July 2014 ~ March 2018</p>
+                        <p>Member, 9th Seoul City Council</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">2017</p>
+                        <p>Director of the Seoul Chapter for Presidential candidate Moon Jae-in Moon</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">June 2013 ~ June 2014</p>
+                        <p>Vice-Chancellor, Democratic Party of Korea (Central Chapter)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">October 2010</p>
+                        <p>Secretary-General, Democratic Party of Korea (Seoul Chapter)</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">July 1995 ~ June 2002</p>
+                        <p>Member, 2nd and 3rd Seongbuk-gu Council</p>
+                    </li>
+                    <li class="about_item">
+                        <p class="date">2002</p>
+                        <p>Aide (Level 4), National Assembly Secretariat</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

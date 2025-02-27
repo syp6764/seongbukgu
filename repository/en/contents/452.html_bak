@@ -1,0 +1,49 @@
+<div class="cts452_wrap">
+    <div class="festival">
+        <p class="tit">Seongbuk Culture Vacation</p>
+        <p class="txt">A festival where visitors can experience various cultures around the world with programs<br/> designed to facilitate the exchange and interaction between Koreans and foreigners</p>
+        <div class="festival_img">
+            <div class="big">
+                <div class="big_img">
+                    <img src="/site/en/images/contents/cts452_img01.jpg" alt="Seongbuk Culture Vacation">
+                </div>
+            </div>
+            <div class="small">
+                <div class="small_img">
+                    <img src="/site/en/images/contents/cts452_img02.jpg" alt="Seongbuk Culture Vacation2">
+                </div>
+                <div class="small_img">
+                    <img src="/site/en/images/contents/cts452_img03.jpg" alt="Seongbuk Culture Vacation3">
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="white_box">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Festival Date/Duration</span>
+                        <span class="dd">Every year from July to August</span>
+                    </li>
+                    <li>
+                        <span class="dt">Event Details</span>
+                        <span class="dd">Swimming, food market, experience activities, cultural performances</span>
+                    </li>
+                    <li>
+                        <span class="dt">Inquiries (Phone)</span>
+                        <span class="dd">02-2241-2603</span>
+                    </li>
+                </ul>
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Venue</span>
+                        <span class="dd">Elementary school in the area</span>
+                    </li>
+                </ul>
+                <a href="https://kko.kakao.com/xdwNfx6OmP" target="_blank" title="new window" class="btn blank">View Map</a>
+            </div>
+            <p class="cont_txt">
+                Seongbuk Cultural Vacation is a summer leisure and culture festival that offers special water-based activity programs for local residents who did not get a chance to book their summer resorts in advance. It is the perfect choice for people looking for a place to swim, cool, down, and have a great time in the middle of summer without traveling too far away from home. Seongbuk Cultural Vacation, held every summer at elementary schools within the district, allows locals to enjoy a comfortable and safe vacation close to home, while also enjoying a variety of cultural and artistic programs such as a summer food market, cultural performances, and immersive workshop programs organized by local groups.
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media all and (min-width:1001px) {
+    /* #header {width: 1740px; margin: 0 auto;} */
+    .menu .depth_list.cut>.depth_item {display: block;}
+    .menu.eachdown .depth2 {top: 0; left: 340px; width: 380px; overflow-y: auto;}
+}
+
+@media all and (min-width:1001px) and (max-width:1300px) {
+    .menu.eachdown .depth2 {left: 280px;}
+}

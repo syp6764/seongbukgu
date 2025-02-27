@@ -1,0 +1,67 @@
+<div class="cts480_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Gilsangsa Temple</p>
+            <p class="txt">A beautiful temple (Korean Buddhist Jogye Order) located in the heart of the city.</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Opening Hours</span>
+                    <span class="dd">Summer (April ~ September), 03:30~19:00 Winter (October ~ March) 03:30~20:00</span>
+                </li>
+                <li>
+                    <span class="dt">Website</span>
+                    <span class="dd"><a href="https://www.gilsangsa.or.kr/" target="_blank" title="new window" class="text_btn blank"><span>gilsangsa.or.kr</span></a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts480_img01.jpg" alt="Gilsangsa Temple 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts480_img02.jpg" alt="Gilsangsa Temple 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts480_img03.jpg" alt="Gilsangsa Temple 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Address</span> :  68, Seonjam-ro 5-gil, Seongbuk-gu, Seoul</p>
+            <a href="https://kko.kakao.com/wfLLfCk3Hg" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Gilsangsa Temple was built on the site of Daewongak Pavilion, which was one of the finest restaurants along with Samcheonggak and Cheongungak until the end of the 1980s. The late Kim Yeong-han donated her real estate holdings (approximately 7,000 pyeong of land and more than 40 buildings) to Buddhist Monk Beopjeong, who then transformed the site into Gilsangsa Temple in 1997. Most notably, as the fundamental measure of Beopjeong's public initiative, the “clear and fragrant” movement, the Temple offers social participation programs designed to build a healthier society.<br/>
+            One of the reasons Gilsangsa Temple is famous is that its trees, forest, and fresh air deliver a sense of tranquility and harmony to people at the heart of the city. The Temple features two Zelkova trees (each 265 and 165 years old) designated as Protected Trees by the Seoul Metropolitan Government that create cool shades in summer and offer a place for meditation during spring and autumn. Moreover, the Temple serves as a cultural venue in a heavily developed urban area with programs such as temple stays, retreats, art contests, and concerts.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

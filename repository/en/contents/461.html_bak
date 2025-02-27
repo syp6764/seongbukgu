@@ -1,0 +1,68 @@
+<div class="cts461_wrap directions">
+    <div class="box map">
+        <div id="daumRoughmapContainer1732169656745" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        <script>
+            new daum.roughmap.Lander({
+                "timestamp" : "1732169656745",
+                "key" : "2masg",
+            }).render();
+        </script>
+    </div>
+    <div class="box type2">
+        <h3 class="box_title">Address and Phone Number</h3>
+        <ul class="bu dl">
+            <li>
+                <span class="dt">Address</span>
+                <span class="dd">144, Hwarang-ro 13-gil, Seongbuk-gu (San 2-1, Hawolgok-dong)</span>
+            </li>
+            <li>
+                <span class="dt">Tel</span>
+                <span class="dd">02)909-3497~8</span>
+            </li>
+            <li>
+                <span class="dt">Fax</span>
+                <span class="dd">02)909-3334</span>
+            </li>
+        </ul>
+    </div>
+    <div class="traffic">
+        <div class="traffic_item n1">
+            <div class="traffic_title"><span>Bus</span></div>
+            <div class="traffic_cont">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Town Bus</span>
+                        <span class="dd">No. Seongbuk 10 (Get off at Seongbuk Community Sports Center) → Walk 70m towards the Gymnasium</span>
+                    </li>
+                    <li>
+                        <span class="dt">Other Buses</span>
+                        <span class="dd"> No. 163, 1113, 1114, 1117, 1411, 1217, 1219, 1220, 211 (get off at Dongdeok Women’s University) → Walk towards the Dongdeok Women’s University Ogeori intersection → Walk towards Dongdeok Women’s University’s main gate → Turn to the road on the left of Dongdeok Women’s University → Walk ahead 100m to the Seongbuk-gu Public Sports Center sign → Walk ahead 70m to the Seongbuk-gu Wolgok Badminton Gymnasium (10 minutes on foot from the bus stop)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="traffic_item n2">
+            <div class="traffic_title"><span>Subway</span></div>
+            <div class="traffic_cont">
+                <p class="blt">Get off at Wolgok Station (subway line no. 6) → Exit no 2, 3 → Walk towards the Dongdeok Women’s University Ogeori intersection → Walk towards Dongdeok Women’s University’s main gate → Turn to the road on the left of Dongdeok Women’s University → Walk ahead 150m to the Seongbuk-gu Public Sports Center sign → Walk ahead 70m to the Seongbuk-gu Wolgok Badminton Gymnasium (10 minutes on foot from Wolgok Station)</p>
+            </div>
+        </div>
+        <div class="traffic_item n3">
+            <div class="traffic_title"><span>Car</span></div>
+            <div class="traffic_cont">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">From Taeneung, Seokgwan-dong</span>
+                        <span class="dd">Drive towards Wolgok Station (subway line no. 6) → Turn into the road on the right hand-side of the Dongdeok Women’s University sign → Turn into the road on the left hand-side of Dongdeok Women’s University’s main gate → Drive ahead towards the Seongbuk-gu Public Sports Center sign → Drive 70m ahead of the Seongbuk-gu Wolgok Badminton Gymnasium</span>
+                    </li>
+                    <li>
+                        <span class="dt">From Jongam-dong, Miari</span>
+                        <span class="dd">Drive from the Jongam-dong Sageori intersection towards Wolgok-dong → Turn into the road on the left hand-side of the Dongdeok Women’s University sign → Turn into the road on the left hand-side of Dongdeok Women’s University’s main gate → Drive ahead towards the Seongbuk-gu Public Sports Center sign<br/>
+Drive from Miarigogae towards Jongam-dong → Drive ahead at the Jongam-dong Sageori intersection (towards Wolgok-dong) → Turn into the road on the left hand-side of the Dongdeok Women’s University sign → Turn into the road on the left hand-side of Dongdeok Women’s University’s main gate → Drive ahead towards the Seongbuk-gu Public Sports Center sign</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

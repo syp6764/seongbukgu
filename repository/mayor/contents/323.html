@@ -1,0 +1,920 @@
+<div class="cts323_wrap">
+    <script>
+        $(document).ready(function(){
+            $(".business_btn").bind("click", function(e){
+                if ( $(this).hasClass('on') ){
+                    $(".business_wrap").slideUp("fast");
+                    $(this).removeClass("on");
+                }else{
+                    $(".business_wrap").slideDown("fast");
+                    $(this).addClass("on");
+                }
+            });
+        })
+
+        $(document).ready(function(){
+        $('.tab_item1').click(function(){
+            var tab_id = $(this).attr('data-tab');
+            $('.tab_item1').removeClass('active');
+            $('.tab_content1').removeClass('active');
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        })
+
+    })
+        $(document).ready(function(){
+        $('.tab_item2').click(function(){
+            var tab_id = $(this).attr('data-tab');
+            $('.tab_item2').removeClass('active');
+            $('.tab_content2').removeClass('active');
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        })
+
+    })
+        $(document).ready(function(){
+        $('.tab_item3').click(function(){
+            var tab_id = $(this).attr('data-tab');
+            $('.tab_item3').removeClass('active');
+            $('.tab_content3').removeClass('active');
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        })
+
+    })
+
+
+    </script>
+    <div class="business">
+        <div class="business_title">공약사업관리</div>
+        <!-- 첫번째 탭-->
+        <div class="tab">
+            <div class="tab_menu">
+                <div class="tab_panel active">
+                    <ul class="tab_list n1 divide3">
+                        <li class="tab_item1 active" data-tab="tab-1">
+                            <button type="button" class="tab_button">
+                                <span>성북구 공약관리 체계</span>
+                            </button>
+                        </li>
+                        <li class="tab_item1" data-tab="tab-2">
+                            <button type="button" class="tab_button">
+                                <span>공약이행평가단(주민배심원단)운영</span>
+                            </button>
+                        </li>
+                        <li class="tab_item1" data-tab="tab-3">
+                            <button type="button" class="tab_button">
+                                <span>공약사업변경</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 첫번째 탭 내용-->
+            <div class="tab_content1 n01 active" id="tab-1">
+                <div class="business_box">
+                    <div class="business_box_item">
+                        <p class="business_divide">공약관리규칙</p>
+                        <button type="button" class="business_btn"><span>성북구 공약관리 규칙 살펴보기</span></button>
+                        <div class="business_wrap">
+                            <div class="line type1"></div>
+                            <h3>"서울특별시 성북구 공약관리 규칙"</h3>
+                            <ul class="business_list">
+                                <li class="business_item">
+                                    <div class="wrap_title">제1조(목적)</div>
+                                    <p>이 규칙은 서울특별시 성북구청장이 주민과 약속한 공약사항을 체계적으로 관리하고 추진하는데 필요한 사항을 정함으로써 공약사항의 효율적인 추진을 통한 지역사회 발전과 주민의 삶의 질 향상을 목적으로 한다. (개정 2022.11.3.)</p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제2조(정의)</div>
+                                    <p>이 규칙에서 사용하는 용어의 뜻은 다음과 같다. <br />
+                                        1. “공약사항”이란 서울특별시 성북구청장(이하 “구청장”이라 한다)이 선거과정에서 서울특별시 성북구 주민(이하 “주민”이라 한다)에게 실천하기로 공표한 사항을 취임 이후 제5조에 따라 확정한 것을 말한다. (개정 2022.11.3.)<br />
+                                        2. “공약사업”이란 공약사항을 구체화하여 실천계획에 따라 추진되는 사업을 말한다. (개정 2022.11.3.)<br />
+                                        3. “총괄부서”란 공약사항을 총괄적으로 관리할 책임이 있는 부서를 말한다.<br />
+                                        4. “주관부서”란 공약사항의 실천계획을 수립하고, 이를 추진할 책임이 있는 부서를 말한다. (개정 2022.11.3.)<br />
+                                        5. “협조부서”란 주관부서의 요청에 따라 공약사항의 추진에 협조하거나 일부 내용을 추진할 책임이 있는 부서를 말한다.
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제3조(권리와 책무)</div>
+                                    <p>
+                                        ① 주민은 구청장의 공약 이행여부를 검증하고 평가할 수 있다. (개정 2022.11.3.) <br />
+                                        ② 구청장은 검증 및 평가와 관련하여 주민의 요청에 적극 협조하여야 하며, 선거 공약이 주민과의 공적 약속이라는 인식을 가지고 공약 이행을 위해 최선을 다하여야 한다. (개정 2022.11.3.)
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제4조(관리체계)</div>
+                                    <p>
+                                        ① 공약사항에 대한 주관부서 지정, 총괄 관리, 이행실적 공개를 담당하는 총괄부서는 기획예산과로 한다.<br />
+                                        ② 주관부서의 장은 소관 공약사업별 담당자를 지정하여 사업을 추진하고 상시 이행실적을 관리한다.
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제5조(공약사업 확정)</div>
+                                    <p>
+                                        ① 구청장은 취임 후 공약자료와 선거과정에서 표출된 주민 의견을 수렴하여 공약사항안을 작성하여야 한다.<br />
+                                        ② 총괄부서의 장은 공약사업별 주관부서의 실천가능성 등에 대한 검토결과를 종합하여 구청장에게 보고하여야 한다.<br />
+                                        ③ 구청장은 취임 후 100일 이내에 공약사업을 최종 확정한다. [본조신설 2022.11.3.]
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제6조(실천계획 수립)</div>
+                                    <p>
+                                        ① 주관부서의 장은 공약사항의 적정성, 실현가능성, 투자재원의 조달가능성 등을 검토하여 공약사업 실천계획을 수립한다. (개정 2022.11.3.)<br />
+                                        ② 공약사업 실천계획에는 공약사업의 세부 추진내용, 국가 및 광역자치단체 계획과의 조화, 연차별 목표와 임기 내 목표, 연차별 투자수요 등 공약이행에 필요한 사항을 포함하여 작성한다. (개정 2022.11.3.)<br />
+                                        ③ 총괄부서는 주관부서에서 작성한 공약사업 실천계획의 내용을 검토 후 주관부서와 협의하여 조정·보완할 수 있으며, 공약사업 확정일로부터 100일 이내에 실천계획을 수립한다. (개정 2022.11.3.) <br />
+                                        ④ 총괄부서는 실천계획이 수립되면 서울특별시 성북구 홈페이지(이하 “구 홈페이지”라 한다)에 공개하여야 한다. (개정 2022.11.3.) [제5조에서 이동, 2022.11.3.]
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제7조(실천계획 관리)</div>
+                                    <p>
+                                        ① 주관부서의 장은 공약사업 실천계획에 따라 사업을 추진하고, 이행실적을 관리하여야 한다. (개정 2022.11.3.)<br />
+                                        ② 총괄부서는 주관부서의 공약사업 이행상황을 수시로 점검하고 관련 자료의 제출을 요구할 수 있다.<br />
+                                        ③ 제2항의 자료 제출 요구에 대해서, 주관부서는 특별한 사유가 없는 한 관련 자료를 제출하여야 한다. (개정 2022.11.3.) [제6조에서 이동, 2022.11.3.]
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제8조(실천계획 변경)</div>
+                                    <p>
+                                        ① 공약사업 실천계획 확정 후 불가피한 사유로 공약 이행이 어려운 경우 실천계획을 변경할 수 있다. (개정 2022.11.3.)<br />
+                                        ② 제1항에 따라 공약사업 실천계획을 변경하려는 경우 주관부서는 그 근거와 사유 등을 총괄부서로 제출하여야 한다. (개정 2022.11.3.) <br />
+                                        ③ 제2항에 따라 주관부서로부터 실천계획변경을 접수할 경우 총괄부서는 그 변경의 타당성을 검토하고, 사안에 따라 관계 전문가 및 주민의 의견 등을 반영하여 변경 여부를 최종 확정한다. 다만, 주관부서에서 사업변경을 위해 사전에 관계전문가의 자문 또는 주민 의견 수렴을 거친 경우 총괄부서는 이를 생략할 수 있다. (개정 2022.11.3.)<br />
+                                        ④ 총괄부서는 서울특별시 성북구(이하 “구”라 한다) 홈페이지에 변경된 공약사업 실천계획의 내용 및 근거, 사유를 공개하여야 한다. (개정 2022.11.3.) [제7조에서 이동, 2022.11.3.]
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제9조(추진상황 점검)</div>
+                                    <p>
+                                        ① 주관부서의 장은 소관 공약사업의 추진실적을 분기별로 자체 점검을 실시하고, 그 평가결과를 매분기 다음 월 10일까지 총괄부서의 장에게 제출하여야 한다.<br />
+                                        ② 총괄부서의 장은 제1항에 따라 주관부서의 장이 제출한 자체 점검 결과에 대하여 종합적인 평가를 실시하고, 그 평가에 부진 또는 문제 사업이 있을 경우 해당 주관부서의 장에게 시정, 보완, 개선 등 필요한 조치를 요구하거나 수시평가 및 보고회 등을 통하여 해결방안을 모색할 수 있다.<br />
+                                        ③ 총괄부서의 장은 평가결과를 구 홈페이지에 공개한다. (개정 2022.11.3.) [제8조에서 이동, 2022.11.3.]
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제10조(공약이행평가단 구성 등)</div>
+                                    <p>
+                                        ① 구청장은 공약사항의 성실한 이행 여부를 평가하기 위하여 공약이행평가단(이하 “평가단”이라 한다)을 구성·운영하여야 한다. 다만 공약이행 평가의 공정성을 확보하기 위해 평가단 구성 및 운영을 외부기관이 수행하게 할 수 있다. (개정 2022.11.3, 2023.4.20.) <br />
+                                        ② 평가단은 다음 각 호의 사항을 수행한다. (개정 2022.11.3.)<br />
+                                        1. 공약사업 이행 여부 전반에 대한 평가 및 건의ㆍ자문<br />
+                                        2. 공약사업 실천계획 변경에 대한 의견제출 등<br />
+                                        ③ 평가단은 30명 이상 40명 이내로 구성하되, 구정 발전에 관심을 가지고 공약이행 평가 등을 성실히 수행할 수 있는 사람 중에서 무작위 추첨을 원칙으로 선정한다. 다만, 필요한 경우 공개모집 등 방법을 다르게 할 수 있다. (개정 2023.4.20.)<br />
+                                        ④ 평가단의 임기는 당해 연도 공약실천 평가기간으로 한다. 다만, 단원의 구성 방법에 따라 임기를 달리 정할 수 있다. (개정 2023.4.20.)<br />
+                                        ⑤ 삭제 (2023.4.20.)<br />
+                                        ⑥ 구청장은 단원이 다음 각 호의 어느 하나에 해당하는 경우에는 임기중이라도 해촉할 수 있다.<br />
+                                        1. 본인이 사임을 희망하는 경우<br />
+                                        2. 평가단의 목적, 운영 취지, 기능 등에 반하는 행위를 하였을 경우<br />
+                                        3. 품위손상이나 그 밖의 사유로 직무를 수행하기 어렵다고 판단될 경우<br />
+                                        ⑦ 평가단원과 그 밖의 전문가 등에 대하여 예산의 범위에서 수당을 지급할 수 있다. (신설 2022.11.3.) [제9조에서 이동, 2022.11.3.] <br />
+                                        ⑧ 공약이행평가단 운영에 관한 그 밖에 필요한 사항은 구청장이 따로 정한다. (신설 2023.4.20.) [제9조에서 이동, 2022.11.3.]
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제11조(평가결과 환류)</div>
+                                    <p>총괄부서 및 주관부서의 장은 자체ㆍ외부평가 결과를 적극적으로 반영하여 공약사업의 바람직한 추진방향을 모색하여야 한다. [전문개정 2022.11.3.]</p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제12조(전문가 및 주민 참여)</div>
+                                    <p>
+                                        ① 총괄부서 및 주관부서의 장은 공약사업 실천계획 수립, 변경, 공약평가 등 공약이행 전 과정에 전문가와 주민을 참여시키고 그 의견을 반영하여야 한다. (개정 2022.11.3.)<br />
+                                        ② 전문가 및 주민 참여 방법은 홈페이지를 통한 의견 수렴, 회의 개최 등 다양한 방법으로 추진할 수 있다. (신설 2022.11.3.)
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제13조(평가결과 등의 공개)</div>
+                                    <p>구청장은 공약 계획의 확정, 실천계획의 변경사항, 추진상황, 공약이행 평가결과를 구 홈페이지 등을 통해 주민에게 공개하여야 한다. (개정 2022.11.3.)</p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">제14조(삭제 2022.11.3.)</div>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">부칙 (2015.3.19 규칙 제624호)</div>
+                                    <p>이 규칙은 공포한 날부터 시행한다.</p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">부칙 (2022.11.3. 규칙 제745호)</div>
+                                    <p>
+                                        제1조(시행일) 이 규칙은 공포한 날부터 시행한다. <br />
+                                        제2조(경과조치) 이 규칙 시행 당시 종전에 따라 구성된 평가단은 이 규칙에 따라 구성된 것으로 본다.
+                                    </p>
+                                </li>
+                                <li class="business_item">
+                                    <div class="wrap_title">부칙(2023.4.20. 규칙 제756호)</div>
+                                    <p>이 규칙은 공포한 날부터 시행한다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="business_box_item">
+                        <p class="business_divide">공약관리체계</p>
+                        <div class="step height">
+                            <ol class="step_list">
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">공약 확정 및<br />실천계획서 수립</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu">
+                                                <li>취임 후 100일 이내 공약사업 확정</li>
+                                                <li>공약사업 확정일로부터 100일 이내 실천계획 수립</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">추진상황 분석 및 <br /> 자체평가</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu dl">
+                                                <li>
+                                                    <span class="dt">주기</span>
+                                                    <span class="dd">분기별 1회</span>
+                                                </li>
+                                                <li>
+                                                    내용
+                                                    <ul>
+                                                        <li>추진실적 자체분석 및 지표관리</li>
+                                                        <li>추진결과 부진(예상) 사업에 대한 대책 마련</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">추진보고회 개최</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu dl">
+                                                <li>
+                                                    <span class="dt">주기</span>
+                                                    <span class="dd">연 1회</span>
+                                                </li>
+                                                <li>
+                                                    <span class="dt">내용</span>
+                                                    <span class="dd">추진상황 점검 및 추진시 문제점에 대한 방안 모색</span>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">공약이행평가 주민배심원단 운영</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu dl">
+                                                <li>
+                                                    <span class="dt">주기</span>
+                                                    <span class="dd">매년 9~11월</span>
+                                                </li>
+                                                <li>
+                                                    <span class="dt">구성</span>
+                                                    <span class="dd">35명(만18세 이상 구민 무작위 선정)</span>
+                                                </li>
+                                                <li>
+                                                    내용 <ul>
+                                                        <li>공약이행도 검토 및 평가 : 권고안 게시</li>
+                                                        <li>실천계획 변경·폐기 등에 대한 승인 등</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">공약이행 달성 매니페스토 교육</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu dl">
+                                                <li>
+                                                    <span class="dt">주기</span>
+                                                    <span class="dd">연 1회</span>
+                                                </li>
+                                                <li>
+                                                    <span class="dt">내용</span>
+                                                    <span class="dd">공약사업 담당 대상으로 공약실천계획 수립 및 공약실현 방안 교육</span>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">공약 추진현황 홈페이지 공개</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu dl">
+                                                <li>
+                                                    <span class="dt">주기</span>
+                                                    <span class="dd">상 시</span>
+                                                </li>
+                                                <li>
+                                                    내용
+                                                    <ul>
+                                                        <li>공약사업 실천계획서, 추진현황, 소요예산, 공약 변경·폐기 현황 게시</li>
+                                                        <li>부서별 자체평가 결과, 공약이행평가 주민배심원 평가 결과 등 공개</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="step_item">
+                                    <div class="step_dt">
+                                        <div class="step_inner">
+                                            <div class="step_title">실천계획 변경</div>
+                                        </div>
+                                    </div>
+                                    <div class="step_dd">
+                                        <p class="step_text">
+                                            <ul class="bu">
+                                                <li>변경 필요성 검토 및 안건상정 후 공약이행평가 주민배심원단을 통한 주민 자문·승인</li>
+                                                <li>변경 결과 구 홈페이지 내 공개 및 주민배심원단에 결과보고</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 첫번째 탭 내용-->
+            <div class="tab_content1 n02" id="tab-2">
+                <div class="business_box">
+                    <div class="business_box_item">
+                        <!-- 두 번째 탭 -->
+                        <div class="tab">
+                            <div class="tab_menu nth">
+                                <div class="tab_panel active">
+                                    <ul class="tab_list n1 divide2">
+                                        <li class="tab_item2 active n01" data-tab="tab-9">
+                                            <button type="button" class="tab_button2">
+                                                <span>2024년</span>
+                                            </button>
+                                        </li>
+                                        <li class="tab_item2 n02" data-tab="tab-5">
+                                            <button type="button" class="tab_button2">
+                                                <span>2023년</span>
+                                            </button>
+                                        </li>
+                                        <li class="tab_item2 n03" data-tab="tab-4">
+                                            <button type="button" class="tab_button2">
+                                                <span>2022년</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="business_all_con">
+                                <h3>주민 평가 (주민배심원단)</h3>
+                                <ul class="bu dl top">
+                                    <li>
+                                        <span class="dt">운영 목적</span>
+                                        <span class="dd">민선8기 성북구 공약이행 성과 등을 주민이 직접 평가하고 그에 따른 자문 모색</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">구성 방법</span>
+                                        <span class="dd">ARS를 통한 무작위 추출(권역별.성별 인구비례 선정기준 반영)</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">대상/인원</span>
+                                        <span class="dd">만18세 이상 성북구민/35명</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">운영주기</span>
+                                        <span class="dd">연1회</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">활동 내용</span>
+                                        <span class="dd">공약이행도 점검 평가, 공약조정 적정여부 승인 등</span>
+                                    </li>
+                                </ul>
+                                <!-- 두 번째 탭 내용-->
+                                <div class="tab_content2" id="tab-4">
+                                    <h3>주민배심원단 활동 (2022)</h3>
+                                    <ul class="jury_list">
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img1.jpg" alt="위촉식 및 매니페스토 교육 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">1차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2022. 9. 30.(금) 13:30 ~ 17:10</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 4층 성북아트홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 30명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">① 위촉식 및    매니페스토 교육 <br />
+                                                        (매니페스토 운동과 민주주의, 주민배심원단의 이해와 역할 안내)<br />
+                                                        ② 주민배심원단 사전회의(분임장 선출, 활동사항 안내)</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img2.jpg" alt="공약사업 추진현황 설명 및 질의응답 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">2차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2022. 10. 14.(금) 14:00 ~ 17:50</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 4층 성북아트홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 29명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">공약 추진부서에서 공약사업 추진현황 설명 및 질의응답</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img3.jpg" alt="주민배심원단 전체회의 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">3차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2022. 10. 28.(금) 13:30 ~ 17:10</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 4층 성북아트홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 29명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">① 공약사업 자료에 대한 분임별 심의 <br />
+                                                        ② 전체회의 최종결정</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="line type3 mt30 mb30"></div>
+                                    <div class="jury_btn">
+                                        <a href="/downloadContentsFile.do?key=323&fileNo=304" class="btn type3 down n01">[활동결과] 주민배심원 권고안</a>
+                                        <a href="/downloadContentsFile.do?key=323&fileNo=303" class="btn type3 down n02">권고안 부서 검토의견</a>
+                                    </div>
+                                </div>
+                                <!-- 두 번째 탭 내용 -->
+                                <div class="tab_content2" id="tab-5">
+                                    <h3>주민배심원단 활동 (2023)</h3>
+                                    <ul class="jury_list">
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img4.jpg" alt="위촉식 및 매니페스토 교육 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">1차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2023. 10. 31.(화) 13:30 ~ 17:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 지하1층 다목적홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 32명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">① 위촉식 및 매니페스토 교육<br />
+                                                            주민배심원단 사전회의</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img5.jpg" alt="공약사업 추진현황 설명 및 질의응답 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">2차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2023. 11. 6.(월) 13:30 ~ 17:30</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 지하1층 다목적홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 33명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">공약 추진부서에서 공약사업 추진현황 설명 및 질의응답</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img6.jpg" alt="주민배심원단 전체회의 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">3차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2023. 11. 16.(목) 13:30 ~ 17:50</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 지하1층 다목적홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 31명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">① 공약사업 자료에 대한 분임별 심의 <br />
+                                                        ② 전체회의 최종결정</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="line type3 mt30 mb30"></div>
+                                    <div class="jury_btn">
+                                        <a href="/downloadContentsFile.do?key=323&fileNo=306" class="btn type3 down n01">[활동결과] 주민배심원 권고안</a>
+                                        <a href="/downloadContentsFile.do?key=323&fileNo=305" class="btn type3 down n02">권고안 부서 검토의견</a>
+                                    </div>
+                                </div>
+                                <div class="tab_content2 active" id="tab-9">
+                                    <h3>주민배심원단 활동 (2024)</h3>
+                                    <ul class="jury_list">
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img7.jpg" alt="위촉식 및 매니페스토 교육 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">1차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2024. 11. 7. (목) 13:30 ~ 17:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 지하1층 다목적홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 31명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">① 위촉식 및 매니페스토 교육<br />
+                                                            ② 주민배심원단 사전회의</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img8.jpg" alt="공약사업 추진현황 설명 및 질의응답 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">2차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2024. 11. 19.(화) 13:30 ~ 17:30</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 지하1층 다목적홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 27명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">공약 추진부서에서 공약사업 추진현황 설명 및 질의응답</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="jury_item">
+                                            <div class="jury_img">
+                                                <img src="/site/mayor/images/contents/cts323_img9.jpg" alt="주민배심원단 전체회의 이미지">
+                                            </div>
+                                            <div class="jury_con">
+                                                <div class="jury_title">3차 회의</div>
+                                                <ul class="bu dl">
+                                                    <li>
+                                                        <span class="dt">일시</span>
+                                                        <span class="dd">2024. 11. 28.(목) 13:30 ~ 17:50</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">장소</span>
+                                                        <span class="dd">구청 지하1층 다목적홀</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">참석</span>
+                                                        <span class="dd">주민배심원단 28명</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="dt">주요내용</span>
+                                                        <span class="dd">① 공약사업 자료에 대한 분임별 심의 <br />
+                                                        ② 전체회의 최종결정</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="line type3 mt30 mb30"></div>
+                                    <div class="jury_btn">
+                                        <a href="/downloadContentsFile.do?key=323&fileNo=883" class="btn type3 down n01">[활동결과] 주민배심원 권고안</a>
+                                        <a href="/downloadContentsFile.do?key=323&fileNo=882" class="btn type3 down n02">권고안 부서 검토의견</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 첫번째 탭 내용-->
+            <div class="tab_content1 n03" id="tab-3">
+                <div class="business_box">
+                    <div class="business_box_item">
+                        <!-- 두 번째 탭 -->
+                        <div class="tab">
+                            <div class="tab_menu nth">
+                                <button class="tab_select"></button>
+                                <div class="tab_panel active">
+                                    <ul class="tab_list n1 divide2">
+                                        <li class="tab_item3 active n01" data-tab="tab-8">
+                                            <button type="button" class="tab_button3">
+                                                <span>2024년</span>
+                                            </button>
+                                        </li>
+                                        <li class="tab_item3 n02" data-tab="tab-7">
+                                            <button type="button" class="tab_button3">
+                                                <span>2023년</span>
+                                            </button>
+                                        </li>
+                                        <li class="tab_item3 n03" data-tab="tab-6">
+                                            <button type="button" class="tab_button3">
+                                                <span>2022년</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="business_all_con">
+                                <div class="tab_content3" id="tab-6">
+                                    <h3>2022년 공약 변경 사항</h3>
+                                    <div class="table_scroll">
+                                        <table class="table">
+                                            <caption>2022년 공약 변경 사항 - 공약명, 변경사항, 변경내역, 변경사유 순으로 정보를 제공</caption>
+                                            <colgroup>
+                                                <col style="width:15%">
+                                                <col style="width:15%">
+                                                <col>
+                                                <col>
+                                                <col style="width:30%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">공약명</th>
+                                                    <th scope="col" rowspan="2">변경사항</th>
+                                                    <th scope="col" colspan="2">변경내역</th>
+                                                    <th scope="col" rowspan="2">변경사유</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">당초</th>
+                                                    <th scope="col">변경내용</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="text_center">고령친화형 도시 벤치 조성 및 버스정류장 쉼터 조성</th>
+                                                    <td>공약명 변경 (세분화)</td>
+                                                    <td>고령친화형 도시 벤치 조성 및 버스정류장 쉼터 조성</td>
+                                                    <td>1-11. 고령친화형 공원 벤치 설치 <br />1-12. 모두가 누리는 버스 정류장 쉼터 조성</td>
+                                                    <td>어르신이 여가시간에 주로 이용하는 관내 공원을 대상으로 고령친화형 벤치를 설치하고, 교통약자를 포함한 모든 이용자에게
+                                                        편리하고 안전한 대중교통 이용환경을 제공하고자 함</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text_center">내집에서10분!무인도서대출기 확대 설치, 구립도서관 무인대출서비스 확대</th>
+                                                    <td>공약명 변경 (통합)</td>
+                                                    <td>내집에서10분! 무인도서대출기 확대 설치, 구립도서관 무인대출서비스 확대</td>
+                                                    <td>5-14. 도서 무인대출 서비스 확대</td>
+                                                    <td>구립도서관의 무인도서대출서비스 확장이 공통으로 포함되는 공약이기에 통합</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text_center">성락원 개방</th>
+                                                    <td>공약명 변경</td>
+                                                    <td>성락원 개방</td>
+                                                    <td>5-10. 성북동 별서 개방</td>
+                                                    <td>명승 지정사유 및 명칭의 오류로 인해 문화재 지정을 해제하고 「서울 성북동 별서」로 명승 재지정됨에 따라 공약명 변경</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text_center">아동청소년 동행카드 지원금 2배 확대</th>
+                                                    <td>공약명 및 내용 변경</td>
+                                                    <td>아동청소년 동행카드 지원금 2배 확대</td>
+                                                    <td>1-13. 아동청소년 동행카드 지원대상 2배 확대</td>
+                                                    <td>2021년 성북구 어린이의회 본회의에서 동행카드 지원대상 확대에 대한 필요성이 제기됨에 따라 지원대상을 확대하여
+                                                        문화·예술·진로체험의 기회를 제공하고자 함</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text_center">종암중학교 지하공영 주차장 복합화 시설 조성</th>
+                                                    <td>공약 폐기</td>
+                                                    <td>종암중학교 지하공영 주차장 복합화 시설 조성</td>
+                                                    <td>추진불가로 공약 제외</td>
+                                                    <td>학교 리모델링 공사 추진로 인한 피로도 증가로 인해 학생들의 안정을 위해 공사 후 안식기 2~3년 필요</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab_content3" id="tab-7">
+                                    <h3>2023년 공약 변경 사항</h3>
+                                    <div class="table_scroll">
+                                        <table class="table">
+                                            <caption>2023년 공약 변경 사항 - 공약명, 변경사항, 변경내역, 변경사유 순으로 정보를 제공</caption>
+                                            <colgroup>
+                                                <col style="width:15%">
+                                                <col style="width:15%">
+                                                <col>
+                                                <col>
+                                                <col style="width:30%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">공약명</th>
+                                                    <th scope="col" rowspan="2">변경사항</th>
+                                                    <th scope="col" colspan="2">변경내역</th>
+                                                    <th scope="col" rowspan="2">변경사유</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">당초</th>
+                                                    <th scope="col">변경내용</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="text_center">아동청소년 동행카드 지원대상 2배 확대</th>
+                                                    <td>공약내용</td>
+                                                    <td>동행카드지원대상:13세(중1), 16세(고1)</td>
+                                                    <td>동행카드지원대상:13세(중1)</td>
+                                                    <td class="text_left">
+                                                        <ul class="bu">
+                                                            <li>2022년 지급대상 : 13세(중1)
+                                                                <ul>
+                                                                    <li>2023년 지급대상 : 13세(중1), 16세(고1)</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>보건복지부 협의결과 확대지원 불가(사회보장기본법 제26조)로 13세(중1)만 지급</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text_center">문화허브 월곡 시민청 건립</th>
+                                                    <td>공약 폐기</td>
+                                                    <td>문화허브 월곡 시민청 건립</td>
+                                                    <td>추진불가로 공약 제외</td>
+                                                    <td>‘시민청 건립’을 시구협력사업으로 추진하였으나, 서울시 정책변화로 시민청 건립 재검토 통보. 대체시설로 서울시와 협업하여 공동사업 추진 예정</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab_content3 active" id="tab-8">
+                                    <h3>2024년 공약 변경 사항</h3>
+                                    <div class="table_scroll">
+                                        <table class="table">
+                                            <caption>2024년 공약 변경 사항 - 공약명, 변경사항, 변경내역, 변경사유 순으로 정보를 제공</caption>
+                                            <colgroup>
+                                                <col style="width:15%">
+                                                <col style="width:15%">
+                                                <col>
+                                                <col>
+                                                <col style="width:30%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">공약명</th>
+                                                <th scope="col" rowspan="2">변경사항</th>
+                                                <th scope="col" colspan="2">변경내역</th>
+                                                <th scope="col" rowspan="2">변경사유</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">당초</th>
+                                                <th scope="col">변경내용</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row" class="text_center">모두가 누리는 버스정류장 쉼터 조성</th>
+                                                <td>추진지표</td>
+                                                <td>버스정류장 의자설치</td>
+                                                <td>버스정류장 편의시설(승차대, 의자, 온열의자, 바람막이 등) 설치</td>
+                                                <td>버스정류장 내 전반적인 환경개선을 통해 교통약자를 포함한 모든 이용자에게 편리하고 안전한 대중교통 이용환경 제공</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text_center">주차난 해소를 위한 권역별 공영주차장 조성</th>
+                                                <td>추진지표 (연차별목표)</td>
+                                                <td>정릉동 공영주차장 조성 2024.12. 완료</td>
+                                                <td>정릉동 공영주차장 조성 2025.12. 완료</td>
+                                                <td>주차난 해소 및 주거환경개선을 위한 공영주차장 조성 과정 중 토지수용과 협의가 지연됨에 따라 추진지표 변경</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text_center">전통시장 활성화</th>
+                                                <td>추진지표 (통합)</td>
+                                                <td>전통시장 활성화 행사 : 한마당, 개울장, 명절이벤트, 시장나들이</td>
+                                                <td>전통시장 활성화 행사</td>
+                                                <td class="text_left">
+                                                    <ul class="bu">
+                                                        <li>추진지표 2개를 1개로 통합(경영현대화사업 + 전통시장 활성화 행사 → 전통시장 활성화 행사)</li>
+                                                        <li>전통시장 활성화 행사 : 중기부‧서울시 공모사업 선정을 통하여 사업 규모가 정해지므로 세부사업별 목표설정에는 한계가 있음</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text_center">문화체육관광부 지정 문화도시 선정 추진</th>
+                                                <td>공약명, 추진지표</td>
+                                                <td>문화체육관광부 지정 문화도시 선정 추진</td>
+                                                <td>5-7. 2030 문화비전으로 문화도시 성북 조성</td>
+                                                <td>문체부 문화도시사업 종료 → 성북구 자체사업으로 추진</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text_center">보문 성북문화체육센터 건립 추진</th>
+                                                <td>공약 폐기</td>
+                                                <td>보문 성북문화체육센터 건립 추진</td>
+                                                <td>추진불가로 공약 제외</td>
+                                                <td class="text_left">
+                                                    <ul class="bu">
+                                                        <li>부지 활용 수요조사 후순위</li>
+                                                        <li>2024년 기준 총사업비 770억원 이상으로 재원 확보</li>
+                                                        <li>대규모 건립에 따른 사전절차 통과 불확실</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

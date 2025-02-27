@@ -1,0 +1,82 @@
+<div class="cts407_wrap directions">
+    <div class="box map">
+        <div id="daumRoughmapContainer1732512353947" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        <script>
+            new daum.roughmap.Lander({
+                "timestamp" : "1732512353947",
+                "key" : "2mbqt",
+            }).render();
+        </script>
+    </div>
+    <div class="traffic">
+        <div class="traffic_item n2">
+            <div class="traffic_title"><span>Subway</span></div>
+            <div class="traffic_cont">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Line 4 Seongshin Women's University Station (Donam) Exit 3</span>
+                        <span class="dd">Walk 5 minutes to Seongbuk-gu office</span>
+                    </li>
+                    <li>
+                        <span class="dt">Line 6 Bomun Station Exit 3</span>
+                        <span class="dd">Walk 8 minutes to Seongbuk-gu office</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="traffic_item n1">
+            <div class="traffic_title"><span>Bus</span></div>
+            <div class="traffic_cont">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">103</span>
+                        <span class="dd">Wolgye-dong-Seongbuk-gu Office-Seoul Station</span>
+                    </li>
+                    <li>
+                        <span class="dt">142</span>
+                        <span class="dd">Dobongsan-Seongbuk-gu Office-Bangbae-dong</span>
+                    </li>
+                    <li>
+                        <span class="dt">152</span>
+                        <span class="dd">Suyu-dong-Seongbuk-gu Office-Gyeongin National University of Education</span>
+                    </li>
+                    <li>
+                        <span class="dt">272</span>
+                        <span class="dd">Myeonmok-dong-Seongbuk-gu Office-Namgajwa-dong</span>
+                    </li>
+                    <li>
+                        <span class="dt">273</span>
+                        <span class="dd">Jungnang Public Garage-Seongbuk-gu Office-Donggyo-dong</span>
+                    </li>
+                    <li>
+                        <span class="dt">1014</span>
+                        <span class="dd">Seongbuk Ecological Experience Hall -Seongbuk-gu Office-Jongno-gu Community Center Sungin-dong</span>
+                    </li>
+                    <li>
+                        <span class="dt">1111</span>
+                        <span class="dd">Beon-dong-Seongbuk-gu Office-Seongbuk-dong</span>
+                    </li>
+                    <li>
+                        <span class="dt">1162</span>
+                        <span class="dd">Seongbuk-gu Community Center -Seongbuk-gu Office-Bomun Station</span>
+                    </li>
+                    <li>
+                        <span class="dt">2115</span>
+                        <span class="dd">Jungnang Public Garage-Cheongnyangni-Seogyeongdae</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="traffic_item n3">
+            <div class="traffic_title"><span>Town bus</span></div>
+            <div class="traffic_cont">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Seongbuk 03</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

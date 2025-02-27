@@ -1,0 +1,66 @@
+<div class="cts460_wrap leisure">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">About the Seongbuk-gu Public Sports Center</p>
+            <p class="txt">The Seongbuk Resident Sports Center welcomes residents with various facilities and beneficial programs.</p>
+            <p class="txt2">Dedicated to enhancing residents' health, cultural life, and welfare, it provides a range of spaces including a 1,000+ m² main gym, sports and culture classrooms, hobby rooms, a table tennis room, fitness center, sauna, and shower rooms, all supported by advanced audiovisual systems and a skilled team of instructors.</p>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts460_img01.jpg" alt="Seongbuk-gu Public Sports Center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box photo">
+        <p class="box_text">
+            The artificial turf soccer field, opened on June 19, 2005, at Wolgok Reservoir, is built to international standards, measuring 108 by 59 meters with four tower poles for modern night lighting. Additional facilities include a 2.4 meters wide, 180 meters long urethane jogging track, outdoor badminton and basketball courts. These facilities offer a natural urban retreat, open for public use, and support soccer events to promote community health and active lifestyles.
+        </p>
+        <ul class="box_list">
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts460_img02.jpg" alt="">
+                </div>
+            </li>
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts460_img03.jpg" alt="">
+                </div>
+            </li>
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts460_img04.jpg" alt="">
+                </div>
+            </li>
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts460_img05.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

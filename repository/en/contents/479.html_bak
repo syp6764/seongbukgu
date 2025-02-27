@@ -1,0 +1,74 @@
+<div class="cts479_wrap">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Hanyangdoseong, the Seoul City Wall</p>
+            <p class="txt">Cultural heritage home to 600 years of Korean history (Historic Site No. 10)</p>
+            <ul class="bu dl">
+                <li>
+                    <span class="dt">Website</span>
+                    <span class="dd"><a href="https://seoulcitywall.seoul.go.kr/index.do" target="_blank" title="new window" class="text_btn blank"><span>seoulcitywall.seoul.go.kr</span></a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts479_img01.jpg" alt="Hanyangdoseong 1">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts479_img02.jpg" alt="Hanyangdoseong 2">
+                </div>
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts479_img03.jpg" alt="Hanyangdoseong 3">
+                </div>
+            </div>
+            <div class="photo_control">
+                <button type="button" class="photo_prev">prev</button>
+                <button type="button" class="photo_next">next</button>
+            </div>
+        </div>
+        <div class="white_box">
+            <p class="txt"><span>Address</span> : San 1-3, Nusang-dong, Jongno-gu, Seoul, Korea, etc. (Jongno-gu, Seongbuk-gu, Jung-gu, Yongsan-gu, Seodaemun-gu)</p>
+            <a href="https://kko.kakao.com/PYpTasSkiC" target="_blank" title="New Window" class="btn blank">View Map</a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="box_text">
+            Hanyangdoseong, the Seoul City Wall was built to mark the boundaries of Hanseongbu, the capital of the Joseon Dynasty, to showcase its sovereign power, and to defend the city against invasions. Specifically, the Wall was built during the 5th year of King Taejo’s reign (1396), along the ridge of Baekak (Bukaksan Mountain), Nakta (Naksan Mountain), Mokmyeok (Namsan Mountain), and Naesasan at Inwang (Inwangsan Mountain).
+            Throughout the years, it was restored and rebuilt on several occasions. At approximately 5 to 8m tall 18.6km long, Seoul City Wall was the longest existing city wall in the worldn (1396-1910, 514 years).
+            In terms of access points, the Wall features four major gates and four minor gates. The four main gates are Heunginjimun, Donuimun, Sungnyemun, and Sukjeongmun, and the four minor gates are Hyehwamun, Souimun, Gwanghuimun and Changuimun.
+            Among them, unfortunately, the Donuimun and Souimun Gates were lost due to damage. Also, the Wall has Ogansumun and Igansumun near Heunginjimun, which connect the canals inside the city to the rivers outside the City Wall.<br/>
+            <br/>
+            At the time of its first construction, the Wall featured earthen walls along the plains and stone walls along the mountains.
+            King Sejong, however, renovated the entire City Wall, and rebuilt the earthen walls using masoned stones.
+            Some records of the construction were discovered on some of the masoned stones used to build the Wall.
+            During the reign of King Taejo and King Sejong, the name of the particular section of the City Wall and the name of the county in charge were engraved into the stone.
+            After the reign of King Sukjong, the names of the supervisor, the responsible engineer, and the date were engraved into the masoned stone blocks to make it easier to identify who was responsible for each part of the Wall.<br/>
+            <br/>
+            The Seoul City Wall lost much of its old grandeur as the city transformed into a more modern city.
+            To restore some sections, the Korean government began a reconstruction project in 1968 for Sukjeongmun, then moved on to restore all sections along the remaining City Wall in 1974.
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

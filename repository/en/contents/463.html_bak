@@ -1,0 +1,69 @@
+<div class="cts463_wrap leisure">
+    <div class="attractions">
+        <div class="cont">
+            <p class="tit">Seongbuk General Leisure and Sports Town</p>
+            <p class="txt">The Seongbuk General Leisure and Sports Town Information is the largest well-being landmark in northeastern Seoul!</p>
+            <p class="txt2">It features the best comprehensive set of sporting facilities in Korea, and is designed to provide the most comfortable and convenient environment, so that its you can enjoy exercising in a friendly and inviting atmosphere.</p>
+        </div>
+        <div class="photo">
+            <div class="photo_list">
+                <div class="photo_item">
+                    <img src="/site/en/images/contents/cts463_img01.jpg" alt="Seongbuk-gu Public Sports Center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box photo">
+        <p class="box_text">
+            The Center operates under a general membership system to make sure local residents can use all of its programs at any time that suits their schedule.<br/>
+            The Center has a swimming pool and fitness center specifically designed to use natural light and offer access to its surrounding landscape. It also features a golf driving range located on the fourth floor (distance to target up to 30 yards) that boasts a bright and pleasant atmosphere at each of its 29 driving bays. Furthermore, you can fine-tune your swings scientifically using a state-of-the-art swing analyzer.<br/>
+            The Center has a squash court and a children’s gym on the first floor. For those looking for cultural programs, the Center offers hobby and sports culture classes on health, art, and other fine arts subjects.<br/>
+            Amenities-wise, the Center has spacious changing rooms, showers with hot and cold baths and sauna facilities, and five shuttle buses servicing multiple routes for a more convenient experience.
+        </p>
+        <ul class="box_list">
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts463_img02.jpg" alt="">
+                </div>
+            </li>
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts463_img03.jpg" alt="">
+                </div>
+            </li>
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts463_img04.jpg" alt="">
+                </div>
+            </li>
+            <li class="box_item">
+                <div class="box_image">
+                    <img src="/site/en/images/contents/cts463_img05.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        var $photo = $('.photo'),
+            $photoList = $photo.find('.photo_list'),
+            $photoPrev = $photo.find('.photo_prev'),
+            $photoNext = $photo.find('.photo_next');
+
+        $photoList.slick({
+            swipe: true,
+            rows: 1,
+            draggable: true,
+            infinite: false,
+            variableWidth: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            prevArrow: $photoPrev,
+            nextArrow: $photoNext,
+        });
+    });
+</script>

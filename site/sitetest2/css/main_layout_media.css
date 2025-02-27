@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* tablet */
+@media screen and (max-width:1000px){
+#container{padding-top:0;}
+.containbox{background-position:36% center;}
+.rowgroup1{padding:68px 0 86px 34%;}
+.quick .conbox ul li a{height:58px; padding:0 2%; line-height:58px; vertical-align:middle; font-size:15px;}
+.quick .conbox ul li a span{vertical-align:middle; line-height:18px;}
+.board .tabcontent .tabcon .titlebox{padding:15px 30px 14px 7px;}
+.board .tabcontent .tabcon .titlebox h3{height:18px; line-height:11px;}
+.board .tabcontent .tabcon .titlebox h3 img{vertical-align:middle;}
+.board .tabcontent .tabcon .more{top:10px; right:2px;}
+.board .tabcontent .tabcon .conbox a .textbox{padding:10px 4% 16px;}
+.board .tabcontent .tabcon .conbox a .textbox .text{height:37px; line-height:18px; font-size:14px;}
+.sns .conbox ul li{width:32%; margin-right:2%;}
+.sns .conbox ul li .innerbox{padding-left:57px;}
+}
+
+/* mobile */
+@media screen and (max-width:640px){
+.containbox{background-image:url(../images/main/visual_m.jpg); background-position:center top;}
+.rowgroup1{padding:36px 0 72px;}
+.rowgroup1 .sloganbox{position:static; width:auto; margin-bottom:21px;}
+.slogan{padding-left:40%;}
+.slogan .conbox{margin-right:-4%;}
+.quick{margin-bottom:0;}
+.quick .conbox ul li{margin-bottom:12px;}
+.quick .conbox ul li a{height:56px; font-size:13px;}
+.quick .conbox ul li a span{margin-bottom:7px;}
+.quick .conbox ul li a span br{display:inline;}
+.sns_link{display:block;}
+.rowgroup2{display:none;}
+.board .tabbox{display:block;}
+.board .tabcontent .tabcon{float:none; display:none; width:auto; margin-right:0; border-radius:0;}
+.board .tabcontent .tabcon.active{display:block;}
+.board .tabcontent .tabcon .titlebox{display:none;}
+.board .tabcontent .tabcon .conbox a{padding:9px; background-repeat:no-repeat; background-position:right bottom; background-image:url(../images/main/board_bg_m.png);}
+.board .tabcontent .tabcon .conbox a .photobox{float:left; width:30%;}
+.board .tabcontent .tabcon .conbox a .textbox{float:right; width:64%; padding:4px 3%; background-image:none !important;}
+.board .tabcontent .tabcon .conbox a .textbox .text{height:41px; line-height:20px; font-size:15px; font-weight:200;}
+.board .tabcontent .tabcon .more{top:auto; right:6px; bottom:9px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

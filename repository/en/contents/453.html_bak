@@ -1,0 +1,52 @@
+<div class="cts453_wrap">
+    <div class="festival">
+        <p class="tit">Seongbuk-dong Cultural Heritage Night Tour</p>
+        <p class="txt">Seongbuk-dong cultural heritage night tour with autumn night's feast</p>
+        <div class="festival_img">
+            <div class="big">
+                <div class="big_img">
+                    <img src="/site/en/images/contents/cts453_img01.jpg" alt="Seongbuk-dong Cultural Heritage Night Tour">
+                </div>
+            </div>
+            <div class="small">
+                <div class="small_img">
+                    <img src="/site/en/images/contents/cts453_img02.jpg" alt="Seongbuk-dong Cultural Heritage Night Tour2">
+                </div>
+                <div class="small_img">
+                    <img src="/site/en/images/contents/cts453_img03.jpg" alt="Seongbuk-dong Cultural Heritage Night Tour3">
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="white_box">
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Festival Date/Duration</span>
+                        <span class="dd">September ~ October, every year</span>
+                    </li>
+                    <li>
+                        <span class="dt">Event Details</span>
+                        <span class="dd">Night time opening of cultural heritage sites, the Seongbuk Tram, night tour (with commentary) program, cultural performances</span>
+                    </li>
+                    <li>
+                        <span class="dt">Inquiries (Phone)</span>
+                        <span class="dd">Seongbuk Culture Institute (02-765-1611)</span>
+                    </li>
+                </ul>
+                <ul class="bu dl">
+                    <li>
+                        <span class="dt">Venue</span>
+                        <span class="dd">Seongbuk-dong area</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="cont_txt">
+                The Seongbuk-dong Cultural Heritage Night Tour takes visitors on a tour around some of Seongbuk-dong’s best cultural institutions,
+                including the Korean Furniture Museum, Korean Stone Art Museum, and Seongbuk Seonjam Museum, as well as various cultural heritage sites in the historical and cultural districts of Seongbuk-dong,
+                such as the Seoul City Wall, Seonjamdanji, and Manhae Han Yong-un’s Simujang residence. The program utilizes cultural assets for various art programs offering unique cultural experiences, tours, and performances.
+                The inaugural Festival was hosted by the Seongbuk Culture Institute in 2017, with financial support from the Cultural Heritage Administration.
+                The Seongbuk-dong Cultural Heritage Tour remains one of the best ways for the public to experience Seongbuk-dong’s cultural heritages in a more immersive way.
+            </p>
+        </div>
+    </div>
+</div>

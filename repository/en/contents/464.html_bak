@@ -1,0 +1,105 @@
+<div class="cts464_wrap directions">
+    <div class="box map">
+        <div id="daumRoughmapContainer1732171758380" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        <script>
+            new daum.roughmap.Lander({
+                "timestamp" : "1732171758380",
+                "key" : "2matg",
+            }).render();
+        </script>
+    </div>
+    <div class="box type2">
+        <h3 class="box_title">Address and Phone Number</h3>
+        <ul class="bu dl">
+            <li>
+                <span class="dt">Address</span>
+                <span class="dd">307, Hancheon-ro 58-gil, Seongbuk-gu (382 Seokgwan-dong)</span>
+            </li>
+            <li>
+                <span class="dt">Tel</span>
+                <span class="dd">02)6917-1100</span>
+            </li>
+            <li>
+                <span class="dt">Fax</span>
+                <span class="dd">02)6442-9701</span>
+            </li>
+        </ul>
+    </div>
+    <div class="traffic">
+        <div class="traffic_item n1">
+            <div class="traffic_title"><span>Bus</span></div>
+            <div class="traffic_cont">
+                <p class="cont_title">From Kwangwoon University towards Wolgye 1-dong, Hyundai Apartments, Samchang Apartments, Dongshin Apartments, Jangwi-dong, Wolgye 1-dong</p>
+                <ul class="list">
+                    <li class="item">
+                        <div class="subject type1">Blue Bus</div>
+                        <p class="text">No. 163, 261</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type2">Green Bus</div>
+                        <p class="text">No. 1130, 1133, 1146, 1220</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type3">Town Bus</div>
+                        <p class="text">No. Seongbuk 14 (green: intra-city line)</p>
+                    </li>
+                </ul>
+                <p class="cont_title">From Wolgye-dong 3-dong towards Seongbuk, Granville Apartments, Hancheon Elementary School, Wolreunggyo Bridge</p>
+                <ul class="list">
+                    <li class="item">
+                        <div class="subject type2">Green Bus</div>
+                        <p class="text">No. 1131, 1134, 1136, 1146, 1215, 1222</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type3">Town Bus</div>
+                        <p class="text">No. Seongbuk 14 (green: intra-city line)</p>
+                    </li>
+                </ul>
+                <p class="cont_title">From Taeneung Civil Defense Training Center towards Jungnangcheon, Doosan Apartments</p>
+                <ul class="list">
+                    <li class="item">
+                        <div class="subject type2">Green Bus</div>
+                        <p class="text">No. 1132, 1134, 1135, 1141, 1155, 1156, 2113, 2114</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type3">Town Bus</div>
+                        <p class="text">No. Seongbuk 03 (green: intra-city line), Seongbuk 04 (green: intra-city line)</p>
+                    </li>
+                </ul>
+                <p class="cont_title">From Seokgwan 1-dong towards Seokgwan Middle and High School, Joongang Heights Apartments, Samsung Apartments, Seokgwan 1-dong Police Station, Seokgwan Elementary School, Seokgwan-dong, Seokgwan Middle and High School</p>
+                <ul class="list">
+                    <li class="item">
+                        <div class="subject type1">Blue Bus</div>
+                        <p class="text">No. 261</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type2">Green Bus</div>
+                        <p class="text">No. 1215, 1222</p>
+                    </li>
+                </ul>
+                <p class="cont_title">From Seokgwan 1-dong Office towards Jangwi Sageori Intersection, Woonam Apartments</p>
+                <ul class="list">
+                    <li class="item">
+                        <div class="subject type1">Blue Bus</div>
+                        <p class="text">No. 163, 261</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type2">Green Bus</div>
+                        <p class="text">No. 1215, 1220, 1222</p>
+                    </li>
+                    <li class="item">
+                        <div class="subject type3">Town Bus</div>
+                        <p class="text">No. Seongbuk 12 (green: intra-city line), Seongbuk 13 (green: intra-city line), Seongbuk 14 (green: intra-city line)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="traffic_item n2">
+            <div class="traffic_title"><span>Subway</span></div>
+            <div class="traffic_cont">
+                <p class="blt">Get off at Seokgye Station (subway lines no. 1, 6), then walk towards Doosan Apartments</p>
+            </div>
+        </div>
+    </div>
+</div>
