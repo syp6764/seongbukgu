@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="PASSWORD" host="192.168.0.128" id="821e0f1f-e882-4cf9-9ea1-b756e4503c02" port="3022" nameFormat="DESCRIPTIVE" username="tomcat" useOpenSSHConfig="true" />
-      <sshConfig authType="PASSWORD" host="192.168.0.128" id="4465e6c0-bd60-4b1a-a187-c9c9a1473db1" port="3022" nameFormat="DESCRIPTIVE" username="tomcat" useOpenSSHConfig="true" />
-    </configs>
-  </component>
-</project>
