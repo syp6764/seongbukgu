@@ -357,8 +357,29 @@
             responsive: [{
                 breakpoint: 1501,
                 settings: {
-                    draggable: true,
+                    slidesToShow: 26,
                 }
+            }, {
+                breakpoint: 1301,
+                settings: {
+                    slidesToShow: 18,
+                }
+            }, {
+                breakpoint: 1001,
+                settings: {
+                    slidesToShow: 15,
+                }
+            }, {
+                breakpoint: 801,
+                settings: {
+                    slidesToShow: 20,
+                }
+            }, {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 15,
+                    slidesToScroll: 12,
+                },
             }]
         });
 
