@@ -641,7 +641,7 @@ function AtcpDeactive($logs){
 
 
 
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
     // 버튼과 팝업 요소 선택
     const shortcutList = document.querySelector('.shortcut_box .shortcut_list');
@@ -772,5 +772,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	loadPage();
 });
+*/
 
 
