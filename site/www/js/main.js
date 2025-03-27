@@ -349,21 +349,25 @@
 		breakpoint: 1301,
 		settings: {
 		slidesToShow: 18,
+		slidesToScroll: 10,
 	    }
 	    }, {
 		breakpoint: 1001,
 		settings: {
 		slidesToShow: 15,
+		slidesToScroll: 10,
 	    }
 	    }, {
 		breakpoint: 801,
 		settings: {
 		slidesToShow: 20,
+		slidesToScroll: 10,
 	    }
 	    }, {
 		breakpoint: 481,
 		settings: {
 		slidesToShow: 15,
+		slidesToScroll: 10,
 	    },
 	    }]
             
