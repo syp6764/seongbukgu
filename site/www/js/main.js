@@ -339,6 +339,33 @@
             autoplay: false,
             swipe:true,
             arrows: false,
+	    responsive: [{
+	        breakpoint: 1501,
+	        settings: {
+		slidesToShow: 26,
+		slidesToScroll: 10,
+	    }
+	    }, {
+		breakpoint: 1301,
+		settings: {
+		slidesToShow: 18,
+	    }
+	    }, {
+		breakpoint: 1001,
+		settings: {
+		slidesToShow: 15,
+	    }
+	    }, {
+		breakpoint: 801,
+		settings: {
+		slidesToShow: 20,
+	    }
+	    }, {
+		breakpoint: 481,
+		settings: {
+		slidesToShow: 15,
+	    },
+	    }]
             
         });
 
