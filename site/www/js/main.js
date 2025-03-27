@@ -331,7 +331,7 @@
 
         $scheduleList.slick({
             rows: 1,
-            draggable: false,
+            draggable: true,
             infinite: false,
             variableWidth: true,
             slidesToShow: 31,
