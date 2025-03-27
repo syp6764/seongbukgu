@@ -271,22 +271,7 @@
 
             $MySlide.slick('setPosition');
 
-            var url = "";
-            if(thisText == '새소식'){
-                url = "/www/sub.do?key=6350";
-            }else if(thisText == '고시공고'){
-                url = "/www/sub.do?key=6353";
-            }else if(thisText == '일자리'){
-                url = "/www/sub.do?key=5930";
-            }else if(thisText == '유관기관'){
-                url = "/www/sub.do?key=6352";
-            }else if(thisText == '언론보도'){
-                url = "/www/sub.do?key=6357";
-            }else if(thisText == '설문조사'){
-                url = "/www/sub.do?key=5820";
-            }
-
-            $noticeMore.prop('href', url);
+        
         });
 
         $noticePanel.each(function (){
@@ -348,7 +333,7 @@
             rows: 1,
             draggable: false,
             infinite: false,
-            variableWidth: false,
+            variableWidth: true,
             slidesToShow: 31,
             slidesToScroll: 1,
             autoplay: false,
@@ -549,229 +534,10 @@
         //하단 퀵메뉴 끝
 
 
-        // 메인 검색 자동완성
-        var $searchInput = $('.total_search');
-        $searchInput.each(function(){
 
-            $(this).after($('<div>',{
-                class:'search_logs',
-            }).append($('<ul>')));
-
-            var $input = $(this),
-                $searchLogs = $input.next();
-
-            $input.on('input',function(){
-                var $this = $(this),
-                    thisQuery = $this.val();
-
-                if(thisQuery.length<1) AtcpDeactive($searchLogs);
-                else AtcpActive($searchLogs, thisQuery);
-            }).on('focusin',function(){
-                if($searchLogs.hasClass('active')) $searchLogs.height($searchLogs.find('ul').innerHeight()).find('a, button').attr('tabindex',0);
-            }).on('focusout',function(){
-                setTimeout(function(){
-                    if(!document.activeElement.closest('.search_input')) $searchLogs.height(0).find('a, button').attr('tabindex',-1);
-                });
-            });
-
-            $(window).on('resize',function(){
-                $searchLogs.height(0).find('a, button').attr('tabindex',-1);
-            });
-        });
 
 	});
 })(window.jQuery);
 
-/**
- * 검색어 입력시 자동완성
-*/
-function AtcpActive($logs, thisQuery){
-    var $autolist = $logs.find('ul');
-    $.ajax({
-        url: "/search/api/akc.jsp?kwd=" + thisQuery,
-        contentType: 'application/json;charset=utf-8',
-        success: function(response) {
-            var obj = JSON.parse(response),
-                // seed = obj.seed,
-                list = obj.suggestions[0],
-                $input = $logs.prev();
-
-            $input[0].originVal = thisQuery;
-
-            $autolist.html('');
-
-            $.each(list,function(i,item){
-                var $item = $('<li>'),
-                    $button = $('<button type="button" title="자동완성 삭제" class="search_delete"></button>'),
-                    kwd = item[0],
-                    $a = $('<a>',{
-                        href: '/search/search.jsp?kwd='+kwd,
-                        html: kwd.replace(new RegExp(thisQuery,'gi'),function(match){
-                            return '<em>' + match + '</em>';
-                        }),
-                    });
-
-                $a.on('focusin',function(){
-                    $input.val(kwd);
-                });
-
-                $a.add($button).on('focusout',function(){
-                    setTimeout(function(){
-                        if(!!document.activeElement.closest('.search_input')) return;
-                        $logs.height(0).find('a, button').attr('tabindex',-1);
-                        $input.val($input[0].originVal);
-                    });
-                });
-
-                $autolist.append($item.append($a, $button));
-            });
-
-            if($autolist.children().length<1) AtcpDeactive($logs);
-            $logs.addClass('active').height($autolist.innerHeight());
-        },
-        error: function(){
-            console.log('Error')
-        }
-    });
-};
-
-function AtcpDeactive($logs){
-    $logs.removeClass('active').height(0);
-};
-
-
-
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    // 버튼과 팝업 요소 선택
-    const shortcutList = document.querySelector('.shortcut_box .shortcut_list');
-    const settingButton = document.querySelector('.setting_btn');
-    const closeSettingButton = document.querySelector('.close_btn');
-    const saveButton = document.querySelector('.save_btn');
-    const resetButton = document.querySelector('.reset_btn');
-    const shortcutSettingPopup = document.querySelector('.shortcut_setting_popup');
-    const shortcutBox = document.querySelector('.shortcut_box .shortcut_list');
-    const moreButton = document.querySelector('.shortcut_btn.more'); // 더보기 버튼
-    const settingButton2 = document.querySelector('.setting');
-    const moreList = document.querySelector('.shortcut_list.more'); // 더보기 ul 요소
-
-    // 최초 접속 시에만 favoriteShortcuts에 7개 아이템 추가
-    if (!localStorage.getItem('favoriteShortcuts')) {
-        // 초기 아이템 7개
-        const initialFavorites = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7'];
-        localStorage.setItem('favoriteShortcuts', JSON.stringify(initialFavorites));
-    }
-
-    // '나의메뉴설정' 버튼 클릭 시 팝업 열기
-    settingButton.addEventListener('click', function() {
-        shortcutSettingPopup.style.display = 'block'; // 팝업 표시
-        loadCheckedItems(); // 팝업을 열 때 체크된 항목을 로드
-    });
-
-    settingButton2.addEventListener('click', function() {
-        shortcutSettingPopup.style.display = 'block'; // 팝업 표시
-        loadCheckedItems(); // 팝업을 열 때 체크된 항목을 로드
-    });
-
-    // '닫기' 버튼 클릭 시 팝업 닫기
-    closeSettingButton.addEventListener('click', function() {
-        shortcutSettingPopup.style.display = 'none'; // 팝업 숨기기
-    });
-
-    // '설정하기' 버튼 클릭 시 체크된 항목 저장
-    saveButton.addEventListener('click', function() {
-        const selectedItems = [];
-
-        // 체크된 항목을 selectedItems 배열에 추가
-        document.querySelectorAll('.shortcut_menu input[type="checkbox"]:checked').forEach(function(checkbox) {
-            const itemId = checkbox.getAttribute('data-id'); // data-id 사용
-            selectedItems.push(itemId); // 체크된 메뉴 ID를 배열에 추가
-        });
-
-        // localStorage에 저장
-        localStorage.setItem('favoriteShortcuts', JSON.stringify(selectedItems));
-
-        // 설정 팝업 닫기
-        shortcutSettingPopup.style.display = 'none';
-
-		loadPage();
-		updateShortcutFavorites();
-    });
-
-    // '초기화' 버튼 클릭 시 체크박스 모두 해제
-    resetButton.addEventListener('click', function() {
-        document.querySelectorAll('.shortcut_menu input[type="checkbox"]').forEach(function(checkbox) {
-            checkbox.checked = false; // 모든 체크박스를 해제
-        });
-    });
-
-    // 저장된 항목에 맞게 체크박스를 체크
-    function loadCheckedItems() {
-        // localStorage에서 저장된 즐겨찾기 항목을 가져옴
-        const favorites = JSON.parse(localStorage.getItem('favoriteShortcuts')) || [];
-
-        // 저장된 항목을 확인
-        console.log('Favorites loaded from localStorage:', favorites);
-
-        // 모든 체크박스를 초기화하고 저장된 항목에 맞게 체크
-        document.querySelectorAll('.shortcut_menu input[type="checkbox"]').forEach(function(checkbox) {
-            console.log(`Checking checkbox with data-id: ${checkbox.getAttribute('data-id')}`);
-            checkbox.checked = favorites.includes(checkbox.getAttribute('data-id')); // 저장된 data-id가 체크박스의 data-id와 일치하면 체크
-        });
-    }
-
-	// 더보기 버튼 동작 실행 로직을 함수로 추출
-	function updateShortcutFavorites() {
-	    const favorites = JSON.parse(localStorage.getItem('favoriteShortcuts')) || [];
-
-	    // 모든 .shortcut_list.more 내부 항목의 <i class="star"> 요소를 초기화
-	    document.querySelectorAll('.shortcut_box.more .shortcut_list.more .shortcut_item a .star').forEach(star => {
-	        star.remove(); // 기존 star 태그를 모두 삭제
-	    });
-
-	    // 즐겨찾기 항목에 맞게 <i class="star">즐겨찾는메뉴</i> 추가
-	    favorites.forEach(function(itemId) {
-	        const listItem = document.querySelector(`.shortcut_box.more .shortcut_list.more [data-id="${itemId}"]`)?.closest('.shortcut_item');
-	        if (listItem) {
-	            const anchors = listItem.querySelectorAll('a'); // 모든 <a> 태그를 가져옴
-	            anchors.forEach(anchor => {
-	                // '즐겨찾는메뉴' 아이콘 추가
-	                if (!anchor.querySelector('.star')) {
-	                    const starElement = document.createElement('i');
-	                    starElement.className = 'star';
-	                    starElement.textContent = '즐겨찾는메뉴';
-	                    anchor.insertBefore(starElement, anchor.firstChild); // <a>의 첫 번째 자식으로 star 아이콘 삽입
-	                }
-	            });
-	        }
-	    });
-	}
-
-	// '더보기' 버튼 클릭 시 updateShortcutFavorites 호출
-	moreButton.addEventListener('click', updateShortcutFavorites);
-
-
-	function loadPage(){
-		const favorites = JSON.parse(localStorage.getItem('favoriteShortcuts')) || [];
-	    // 기존 li 초기화
-	    shortcutList.innerHTML = '';
-
-	    // 즐겨찾기 항목 중 최대 7개만 추가
-	    favorites.slice(0, 7).forEach(function(itemId) {
-	        // a 태그 내에서 data-id를 찾는 방법
-	        const matchingAnchor = document.querySelector(`.shortcut_list a[data-id="${itemId}"]`);
-	        if (matchingAnchor) {
-	            const listItem = matchingAnchor.closest('li'); // <a> 태그의 부모 li를 찾음
-	            if (listItem) {
-	                // li 항목을 첫 번째 .shortcut_list에 추가
-	                shortcutList.appendChild(listItem.cloneNode(true)); // 원본을 복제하여 추가
-	            }
-	        }
-	    });
-	}
-
-	loadPage();
-});
-*/
 
 
